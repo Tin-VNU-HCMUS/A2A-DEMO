@@ -1,0 +1,65 @@
+[project]
+name = "a2a-hospital-agents"
+version = "0.1.0"
+description = "A2A agents for hospital chatbot system"
+requires-python = ">=3.10"
+
+dependencies = [
+    "a2a-sdk>=0.2.9",
+    "httpx>=0.28.1",
+    "httpx-sse>=0.4.0",
+    "jwcrypto>=1.5.6",
+    "pydantic>=2.10.6",
+    "pyjwt>=2.10.1",
+    "sse-starlette>=2.2.1",
+    "starlette>=0.46.1",
+    "typing-extensions>=4.12.2",
+    "uvicorn>=0.34.0",
+    "langchain-core>=0.3.72",
+    "langchain-google-genai>=2.1.8",
+    "langgraph>=0.6.2",
+    "google-adk>=1.4.2",
+    "pandas>=2.3.1",
+    "numpy>=2.3.2",
+    "matplotlib>=3.10.5",
+    "seaborn>=0.13.2",
+    "langchain-mcp-adapters>=0.1.9",
+    "gradio>=5.39.0",
+    "rapidfuzz>=3.13.0",
+    "sentence-transformers>=5.1.0",
+    "faiss-cpu>=1.11.0.post1",
+    "langchain-ollama>=0.3.6",
+    "nltk>=3.9.1",
+    "cleantext>=1.1.4",
+    "pip>=25.2",
+    "langchain>=0.3.27",
+    "pypdf2>=3.0.1",
+    "langchain-community>=0.3.27",
+    "pdfplumber>=0.11.7",
+    "pdf2image>=1.17.0",
+    "pytesseract>=0.3.13",
+    "spacy>=3.8.7",
+    "rank-bm25>=0.2.2",
+    "chromadb>=1.0.17",
+    "pyvi>=0.1.1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["agents", "a2a", "google"]
+
+[tool.uv.workspace]
+members = [
+    "agents/symptom_agent",
+    "agents/cost_agent",
+    "agents/booking_agent"
+]
+
+[tool.uv.sources]
+# Đã xóa a2a-samples để tránh lỗi
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest", "ruff"]

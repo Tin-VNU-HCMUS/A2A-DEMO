@@ -1,0 +1,279 @@
+[
+    {
+    "question": "Bác sĩ ơi, dạo này tôi bị chán ăn, buồn nôn, tiêu chảy, đau âm ỉ hạ sườn phải, mệt mỏi. Thì tôi có thể mắc những bệnh gì",
+    "answer": "Xơ gan",
+    "context": [
+        "Chán ăn kéo dài",
+        "Buồn nôn, nôn",
+        "Tiêu chảy, mệt mỏi, suy nhược",
+        "Đau âm ỉ hạ sườn phải",
+        "Vàng da"
+    ]
+},
+
+
+{
+    "question": "Bác sĩ ơi, gần đây tôi cảm thấy mệt mỏi, khó chịu, chán ăn, sốt nhẹ và da hơi vàng, và có xuất hiện các biến chứng xơ gan: cổ trưởng, dãn tĩnh mạch chảy máu, bệnh lý não và lách to. Tôi có thể bị bệnh gì?",
+    "answer": "Viêm gan mãn tính",
+    "context": [
+    "Mệt mỏi",
+    "Khó chịu",
+    "Chán ăn",
+    "Sốt nhẹ",
+    "Vàng da",
+    "biến chứng xơ gan: cổ trưởng, dãn tĩnh mạch chảy máu, bệnh lý não và lách to"
+    ]
+},
+
+{
+    "question": "Thưa bác sĩ, dạo này người tôi hay mệt rã rời, ăn uống không ngon miệng, hơi sốt và da dẻ vàng vọt. Có thể mắc bệnh gì vậy?",
+    "answer": "Viêm gan mãn tính",
+    "context": [
+    "Mệt mỏi",
+    "Khó chịu",
+    "Chán ăn",
+    "Sốt nhẹ",
+    "Vàng da",
+    "biến chứng xơ gan: cổ trưởng, dãn tĩnh mạch chảy máu, bệnh lý não và lách to"
+    ]
+},
+
+{
+    "question": "Bác sĩ, tôi bị phát ban, nổi mề đay, viêm khớp kèm theo mệt mỏi và biểu hiện viêm gan. Có thể là bệnh gì?",
+    "answer": "Viêm gan B mãn tính",
+    "context": [
+    "Phát ban",
+    "Nổi mề đay",
+    "Viêm khớp",
+    "Mệt mỏi",
+    "Viêm gan"
+    ]
+},
+
+{
+    "question": "Bác sĩ ơi, da tôi hay nổi mụn đỏ, ngứa ngáy, khớp xương đau nhức, người mệt và gan hình như có vấn đề. Bệnh gì thế?",
+    "answer": "Viêm gan B mãn tính",
+    "context": [
+    "Phát ban",
+    "Nổi mề đay",
+    "Viêm khớp",
+    "Mệt mỏi",
+    "Viêm gan"
+    ]
+},
+
+{
+    "question": "Thưa bác sĩ, tôi có triệu chứng aminotransferase tăng nhẹ, mệt mỏi và một số biểu hiện ngoài gan như cryoglobulin huyết, rối loạn chuyển hóa porphyria. Tôi có thể mắc bệnh gì?",
+    "answer": "Viêm gan C mãn tính",
+    "context": [
+    "Aminotransferase tăng nhẹ",
+    "Mệt mỏi",
+    "Cryoglobulin huyết",
+    "Rối loạn chuyển hóa porphyria",
+    "Viêm cầu thận",
+    "Viêm tuyến nước bọt lympho"
+    ]
+},
+
+{
+    "question": "Bác sĩ, gần đây xét nghiệm máu hơi lạ, người hay mệt, da dẻ khô và thận hình như không ổn. Có bệnh gì không?",
+    "answer": "Viêm gan C mãn tính",
+    "context": [
+    "Aminotransferase tăng nhẹ",
+    "Mệt mỏi",
+    "Cryoglobulin huyết",
+    "Rối loạn chuyển hóa porphyria",
+    "Viêm cầu thận",
+    "Viêm tuyến nước bọt lympho"
+    ]
+},
+
+{
+    "question": "Bác sĩ ơi, tôi bị vàng da tiến triển, phát ban, khô mắt và viêm tuyến giáp. Có thể là bệnh gì?",
+    "answer": "Viêm gan tự miễn",
+    "context": [
+    "Vàng da tiến triển",
+    "Phát ban",
+    "Khô mắt",
+    "Viêm tuyến giáp",
+    "Thiếu máu tan huyết",
+    "Viêm thận",
+    "Mệt mỏi và chán ăn kéo dài"
+    ]
+},
+
+{
+    "question": "Thưa bác sĩ, da tôi vàng hoe, ăn chẳng thấy ngon, bụng to lên, đau quặn, mũi hay chảy máu, nóng sốt và yếu người. Bệnh gì vậy?",
+    "answer": "Viêm gan tự miễn",
+    "context": [
+    "Vàng da tiến triển",
+    "Phát ban",
+    "Khô mắt",
+    "Viêm tuyến giáp",
+    "Thiếu máu tan huyết",
+    "Viêm thận",
+    "Mệt mỏi và chán ăn kéo dài"
+    ]
+},
+
+{
+    "question": "Bác sĩ, tôi bị chán ăn, buồn nôn, nôn, tiêu chảy, đau âm ỉ hạ sườn phải, mệt mỏi, suy nhược và vàng da. Tôi có thể mắc bệnh gì?",
+    "answer": "Xơ gan",
+    "context": [
+    "Chán ăn",
+    "Buồn nôn, nôn",
+    "Tiêu chảy",
+    "Đau âm ỉ hạ sườn phải",
+    "Mệt mỏi, suy nhược",
+    "Vàng da"
+    ]
+},
+
+{
+    "question": "Bác sĩ ơi, dạo này ăn không vô, hay buồn ói, đi ngoài lỏng, vùng bụng phải đau âm ỉ, người yếu đuối và da vàng vọt. Có bệnh gì không?",
+    "answer": "Xơ gan",
+    "context": [
+    "Chán ăn",
+    "Buồn nôn, nôn",
+    "Tiêu chảy",
+    "Đau âm ỉ hạ sườn phải",
+    "Mệt mỏi, suy nhược",
+    "Vàng da"
+    ]
+},
+
+{
+    "question": "Thưa bác sĩ, tôi có chán ăn, buồn nôn, nôn, sốt, vàng da và gan to ấn đau. Có thể là bệnh gì?",
+    "answer": "Bệnh gan do rượu",
+    "context": [
+    "Chán ăn",
+    "Buồn nôn, nôn",
+    "Sốt",
+    "Vàng da",
+    "Gan to ấn đau"
+    ]
+},
+
+{
+    "question": "Bác sĩ, gần đây ăn uống kém, hay ói mửa, sốt hâm hấp, da vàng và vùng gan đau khi sờ. Bệnh gì thế?",
+    "answer": "Bệnh gan do rượu",
+    "context": [
+    "Chán ăn",
+    "Buồn nôn, nôn",
+    "Sốt",
+    "Vàng da",
+    "Gan to ấn đau"
+    ]
+},
+
+{
+    "question": "Bác sĩ ơi, tôi bị ngứa, mệt mỏi, vàng da, u vàng mi mắt, phân mỡ và tăng sắc tố da. Tôi có thể mắc bệnh gì?",
+    "answer": "Xơ gan mật nguyên phát",
+    "context": [
+    "Ngứa",
+    "Mệt mỏi",
+    "Vàng da",
+    "U vàng mi mắt (xanthelasma)",
+    "u vàng (xanthomata)",
+    "Phân mỡ",
+    "Tăng sắc tố da",
+    "Gan lách to",
+    "tăng áp lực tính mạch cửa",
+    "tăng phosphatase kiềm máu, bilirubin, cholesterrol và IgM"
+    ]
+},
+
+{
+    "question": "Thưa bác sĩ, da ngứa ngáy, người mệt, da vàng, mí mắt nổi cục, phân nhờn và da sậm màu. Có bệnh gì vậy?",
+    "answer": "Xơ gan mật nguyên phát",
+    "context": [
+    "Ngứa",
+    "Mệt mỏi",
+    "Vàng da",
+    "U vàng mi mắt (xanthelasma)",
+    "u vàng (xanthomata)",
+    "Phân mỡ",
+    "Tăng sắc tố da",
+    "Gan lách to",
+    "tăng áp lực tính mạch cửa",
+    "tăng phosphatase kiềm máu, bilirubin, cholesterrol và IgM"
+    ]
+},
+
+{
+    "question": "Thưa bác sĩ, tôi bị chảy máu đường tiêu hóa, thường xuyên nôn ra máu tươi và đi ngoài phân đen, nội soi cho thấy giãn tĩnh mạch thực quản và dạ dày. Đây có thể là dấu hiệu của bệnh gì?",
+    "answer": "Tăng áp lực tĩnh mạch cửa dẫn đến giãn tĩnh mạch thực quản và dạ dày",
+    "context": [
+      "Chảy máu đường tiêu hóa",
+      "Nôn ra máu tươi",
+      "Phân đen",
+      "Giãn tĩnh mạch thực quản",
+      "Giãn tĩnh mạch dạ dày",
+      "Tăng áp lực tĩnh mạch cửa (gradient áp lực tĩnh mạch gan >5 mmHg)",
+      "Liên quan đến xơ gan (theo phân loại Child-Pugh)"
+    ]
+},
+
+{
+    "question": "Bác sĩ ơi, tôi hay bị ói ra máu, đi ngoài thấy phân đen sì, bác sĩ bảo mạch máu ở thực quản với dạ dày bị phình to. Vậy tôi bị bệnh gì hả bác sĩ?",
+    "answer": "Tăng áp lực tĩnh mạch cửa dẫn đến giãn tĩnh mạch thực quản và dạ dày",
+    "context": [
+      "Chảy máu đường tiêu hóa",
+      "Nôn ra máu",
+      "Phân đen",
+      "Giãn tĩnh mạch thực quản",
+      "Giãn tĩnh mạch dạ dày",
+      "Tăng áp lực tĩnh mạch cửa (gradient áp lực tĩnh mạch gan >5 mmHg)",
+      "Có thể liên quan đến bệnh gan mạn tính như xơ gan"
+    ]
+},
+
+{
+    "question": "Thưa bác sĩ, tôi bị lú lẫn, nói lắp, thay đổi tính cách, buồn ngủ khó đánh thức và suy tư thế vận động (asterixis - dấu hiệu flapping tremor). Tôi có thể mắc bệnh gì?",
+    "answer": "Bệnh lý não gan",
+    "context": [
+    "Lú lẫn",
+    "Nói lắp",
+    "Thay đổi tính cách gồm bạo lực và hành vi không phù hợp",
+    "Buồn ngủ và khó đánh thức",
+    "suy tư thế vận động (asterixis - dấu hiệu flapping tremor)"
+    ]
+},
+
+{
+    "question": "Bác sĩ, đầu óc tôi hay mơ hồ, nói năng lắp bắp, tính tình thay đổi, buồn ngủ suốt và tay run run. Có bệnh gì không?",
+    "answer": "Bệnh lý não gan",
+    "context": [
+    "Lú lẫn",
+    "Nói lắp",
+    "Thay đổi tính cách gồm bạo lực và hành vi không phù hợp",
+    "Buồn ngủ và khó đánh thức",
+    "suy tư thế vận động (asterixis - dấu hiệu flapping tremor)"
+    ]
+},
+
+{
+    "question": "Bác sĩ ơi, tôi có cổ trướng, lách to, giãn tĩnh mạch và bệnh não gan. Có thể là bệnh gì?",
+    "answer": "Tăng áp lực tĩnh mạch cửa",
+    "context": [
+    "Cổ trướng",
+    "Lách to",
+    "Giãn tĩnh mạch",
+    "Bệnh não gan",
+    "Tăng hoạt lách"
+    ]
+},
+
+{
+    "question": "Thưa bác sĩ, bụng tôi phình to nước, vùng bụng trái to lên, mạch máu nổi và đầu óc không minh mẫn. Bệnh gì vậy?",
+    "answer": "Tăng áp lực tĩnh mạch cửa",
+    "context": [
+    "Cổ trướng",
+    "Lách to",
+    "Giãn tĩnh mạch",
+    "Bệnh não gan",
+    "Tăng hoạt lách"
+    ]
+}
+
+]

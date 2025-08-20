@@ -1,0 +1,1579 @@
+[
+    {
+        "question": "Bác sĩ ơi, tôi thường đau rát vùng thượng vị sau ăn khoảng 90 phút đến 3 giờ, hay đau về đêm và giảm khi ăn. Nên nghĩ đến bệnh gì?",
+        "answer": "Loét tá tràng",
+        "context": [
+            "Đau rát vùng thượng vị sau ăn từ 90 phút đến 3h, thường về đêm, giảm khi ăn"
+        ]
+    },
+    {
+        "question": "Bác sĩ, ăn xong khoảng vài tiếng là bụng giữa bị rát, đôi khi đau khiến tôi thức dậy ban đêm, khi tôi ăn thì mới hết đau — bị gì vậy?",
+        "answer": "Loét tá tràng",
+        "context": [
+            "Đau rát vùng thượng vị sau ăn từ 90 phút đến 3h, thường về đêm, giảm khi ăn"
+        ]
+    },
+    {
+        "question": "Tôi bị đau rát ở vùng thượng vị, đau tồi tệ hơn sau ăn, ăn mất ngon và sụt cân. Như vậy tôi bị bệnh gì?",
+        "answer": "Loét dạ dày",
+        "context": [
+            "Đau rát vùng thượng vị có thể tồi tệ hơn do hoặc liên quan đến thức ăn, chán ăn, sút cân (chiếm 40%)"
+        ]
+    },
+    {
+        "question": "Ăn vào là thấy rát bụng trên, ăn mất ngon, sụt ký — bác sĩ cho tôi biết có chuyện gì không?",
+        "answer": "Loét dạ dày",
+        "context": [
+            "Đau rát vùng thượng vị có thể tồi tệ hơn do hoặc liên quan đến thức ăn, chán ăn, sút cân (chiếm 40%)"
+        ]
+    },
+    {
+        "question": "Dạo này tôi thấy khó tiêu, đầy bụng, có khi không thấy triệu chứng rõ rệt — tôi bị bênh gì?",
+        "answer": "Viêm dạ dày mãn tính",
+        "context": [
+            "Ở giai đoạn sớm viêm giới hạn ở lớp dưới niêm mạc (viêm dạ dày bề mặt)",
+            "Khi bệnh tiến triển, phá hủy các tuyến, gây viêm teo dạ dày",
+            "Ở giai đoạn cuối, teo dạ dày, lớp niêm mạch mỏng và thâm nhiễm thưa thớt các tế bào viêm",
+            "Có thể không có triệu chứng hoặc kèm khó tiêu"
+        ]
+    },
+    {
+        "question": "Tôi từng bị chẩn đoán loét dạ dày, và hay bị tiêu chảy. Tôi bị bệnh gì vậy bác sĩ?",
+        "answer": "Hội chứng Zollinger-Ellison (Z-E)",
+        "context": [
+            "Cân nhắc khi loét nặng, khó điều trị, vị trí loét không điển hình hoặc kèm ỉa chảy"
+        ]
+    },
+    {
+        "question": "Tôi từng bị chẩn đoán loét dạ dày nặng, uống thuốc không hết và gần đây hay bị đi ngoài lỏng. Tôi bị bệnh gì vậy bác sĩ?",
+        "answer": "Hội chứng Zollinger-Ellison (Z-E)",
+        "context": [
+            "Cân nhắc khi loét nặng, khó điều trị, vị trí loét không điển hình hoặc kèm ỉa chảy"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, tôi bị ỉa chảy có máu, có nhầy, đau bụng và mót rặn — những triệu chứng này hướng tới bệnh gì?",
+        "answer": "Viêm loét đại tràng",
+        "context": [
+            "Ỉa chảy phân máu, nhầy, sốt, đau bụng, mót rặn, sút cân, mức độ nghiêm trọng (đa số các trường hợp là nhẹ, giới hạn tới đại tràng sigma)",
+            "Trong trường hợp nặng, mất nước, thiếu máu, giảm kali huyết, giảm albumin máu",
+            "Biến chứng: phình đại tràng nhiễm độc, thủng, nguy cơ ung thư liên quan thời gian viêm"
+        ]
+    },
+    {
+        "question": "Ăn uống bình thường nhưng lại đi ngoài phân có máu, dính nhầy, đau bụng, cảm giác mót thì bị bệnh gì vậy?",
+        "answer": "Viêm loét đại tràng",
+        "context": [
+            "Ỉa chảy phân máu, nhầy, sốt, đau bụng, mót rặn, sút cân, mức độ nghiêm trọng (đa số các trường hợp là nhẹ, giới hạn tới đại tràng sigma)",
+            "Trong trường hợp nặng, mất nước, thiếu máu, giảm kali huyết, giảm albumin máu",
+            "Biến chứng: phình đại tràng nhiễm độc, thủng, nguy cơ ung thư liên quan thời gian viêm"
+        ]
+    },
+    {
+        "question": "Tôi hay bị sốt, nóng hết người, đi ngoài lỏng, đôi khi có màu nâu đỏ làm tôi mất nước, sụt ký. Tôi đang bị gì vậy?",
+        "answer": "Viêm loét đại tràng",
+        "context": [
+            "Ỉa chảy phân máu, nhầy, sốt, đau bụng, mót rặn, sút cân, mức độ nghiêm trọng (đa số các trường hợp là nhẹ, giới hạn tới đại tràng sigma)",
+            "Trong trường hợp nặng, mất nước, thiếu máu, giảm kali huyết, giảm albumin máu",
+            "Biến chứng: phình đại tràng nhiễm độc, thủng, nguy cơ ung thư liên quan thời gian viêm"
+        ]
+    },
+    {
+        "question": "Tôi thấy gần đây bị phình bụng, hay mót đi vệ sinh và thường đi lỏng, đôi khi có máu. Vậy tôi bị sao không?",
+        "answer": "Viêm loét đại tràng",
+        "context": [
+            "Ỉa chảy phân máu, nhầy, sốt, đau bụng, mót rặn, sút cân, mức độ nghiêm trọng (đa số các trường hợp là nhẹ, giới hạn tới đại tràng sigma)",
+            "Trong trường hợp nặng, mất nước, thiếu máu, giảm kali huyết, giảm albumin máu",
+            "Biến chứng: phình đại tràng nhiễm độc, thủng, nguy cơ ung thư liên quan thời gian viêm"
+        ]
+    },
+    {
+        "question": "Bác sĩ, tôi hay sốt, đau bụng, ỉa chảy, giảm cân và mệt mỏi. Liệu tôi có sao không?",
+        "answer": "Bệnh ROHN (CD)",
+        "context": [
+            "Sốt, đau bụng, ỉa chảy (thường không có máu), mệt mỏi, sút cân, chậm phát triển ở trẻ em",
+            "Viêm hồi tràng cấp tính tương tự như viêm ruột thừa, vết nứt hậu môn trực tràng, dò, áp xe"
+        ]
+    },
+    {
+        "question": "Tôi bị đau bụng, đi lỏng, ốm yếu, giảm ký, có lúc như đau ruột thừa. Có bị sao không?",
+        "answer": "Bệnh ROHN (CD)",
+        "context": [
+            "Sốt, đau bụng, ỉa chảy (thường không có máu), mệt mỏi, sút cân, chậm phát triển ở trẻ em",
+            "Viêm hồi tràng cấp tính tương tự như viêm ruột thừa, vết nứt hậu môn trực tràng, dò, áp xe"
+        ]
+    },
+    {
+        "question": "Tôi bị đi ngoài lỏng, ốm yếu, mệt mỏi, sụt ký. Có bị sao không?",
+        "answer": "Bệnh ROHN (CD)",
+        "context": [
+            "Sốt, đau bụng, ỉa chảy (thường không có máu), mệt mỏi, sút cân, chậm phát triển ở trẻ em",
+            "Viêm hồi tràng cấp tính tương tự như viêm ruột thừa, vết nứt hậu môn trực tràng, dò, áp xe"
+        ]
+    },
+    {
+        "question": "Con tôi bị chậm lớn, hay đau bụng, mệt mỏi, có lúc đi lỏng. Có bị sao không?",
+        "answer": "Bệnh ROHN (CD)",
+        "context": [
+            "Sốt, đau bụng, ỉa chảy (thường không có máu), mệt mỏi, sút cân, chậm phát triển ở trẻ em",
+            "Viêm hồi tràng cấp tính tương tự như viêm ruột thừa, vết nứt hậu môn trực tràng, dò, áp xe"
+        ]
+    },
+    {
+        "question": "Có đau bụng, trướng bụng và đỡ hơn sau khi đi ngoài, khiến tôi phải đi nhiều hơn. Bị gì?",
+        "answer": "Hội chứng ruột kích thích (IBS)",
+        "context": [
+            "Đau bụng và thay đổi thói quen đại tiện",
+            "Các triệu chứng khác thường gồm: trướng bụng, bụng giảm đau khi đi ngoài, tăng số lần đi ngoài, phân lỏng, nhầy trong phân và cảm giác phân không hết",
+            "Các triệu chứng liên quan gồm: phân nhão, phân dẹt hoặc phân mỏng như bút chì, ợ chua, đầy hơi, suy nhược, mệt mỏi, đánh trống ngực và tiểu tiện thường xuyên"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng, lúc táo bón, lúc tiêu chảy, đi xong thấy đỡ — phải làm sao, có bệnh không?",
+        "answer": "Hội chứng ruột kích thích (IBS)",
+        "context": [
+            "Đau bụng và thay đổi thói quen đại tiện",
+            "Các triệu chứng khác thường gồm: trướng bụng, bụng giảm đau khi đi ngoài, tăng số lần đi ngoài, phân lỏng, nhầy trong phân và cảm giác phân không hết",
+            "Các triệu chứng liên quan gồm: phân nhão, phân dẹt hoặc phân mỏng như bút chì, ợ chua, đầy hơi, suy nhược, mệt mỏi, đánh trống ngực và tiểu tiện thường xuyên"
+        ]
+    },
+    {
+        "question": "Suốt vài tháng tôi hay đau bụng, phải đi nặng nhiều, mỗi lần đi thì luôn cảm giác đi không hết, phân nhão. Tôi bị gì vậy?",
+        "answer": "Hội chứng ruột kích thích (IBS)",
+        "context": [
+            "Đau bụng và thay đổi thói quen đại tiện",
+            "Các triệu chứng khác thường gồm: trướng bụng, bụng giảm đau khi đi ngoài, tăng số lần đi ngoài, phân lỏng, nhầy trong phân và cảm giác phân không hết",
+            "Các triệu chứng liên quan gồm: phân nhão, phân dẹt hoặc phân mỏng như bút chì, ợ chua, đầy hơi, suy nhược, mệt mỏi, đánh trống ngực và tiểu tiện thường xuyên"
+        ]
+    },
+    {
+        "question": "Tôi hay thấy trướng bụng, đầy hơi, phải đi tiểu và đi nặng nhiều, phân dẹt, đôi khi mỏng. Tôi bị gì vậy?",
+        "answer": "Hội chứng ruột kích thích (IBS)",
+        "context": [
+            "Đau bụng và thay đổi thói quen đại tiện",
+            "Các triệu chứng khác thường gồm: trướng bụng, bụng giảm đau khi đi ngoài, tăng số lần đi ngoài, phân lỏng, nhầy trong phân và cảm giác phân không hết",
+            "Các triệu chứng liên quan gồm: phân nhão, phân dẹt hoặc phân mỏng như bút chì, ợ chua, đầy hơi, suy nhược, mệt mỏi, đánh trống ngực và tiểu tiện thường xuyên"
+        ]
+    },
+    {
+        "question": "Tôi bị đau vùng hố chậu trái tái phát, đôi khi sốt và thay đổi thói quen đi ngoài. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Bệnh túi thừa / Viêm túi thừa",
+        "context": [
+            "Điểm đau: góc phần tư dưới trái, tái phát, giảm đau sau đi đại tiện, táo bón hoặc ỉa chảy xen kẽ",
+            "Viêm túi thừa: đau, sốt, thay đổi thói quen đại tiện, đau khi ấn vùng đại tràng; CT là phương pháp xác định tốt nhất",
+            "Biến chứng: áp xe, thủng, dò, áp xe gan, hẹp"
+        ]
+    },
+    {
+        "question": "Bác sĩ, đau sườn dưới bên trái, ấn vào thấy đau, có khi sốt, đi cầu khác lạ. Tôi có sao không?",
+        "answer": "Bệnh túi thừa / Viêm túi thừa",
+        "context": [
+            "Điểm đau: góc phần tư dưới trái, tái phát, giảm đau sau đi đại tiện, táo bón hoặc ỉa chảy xen kẽ",
+            "Viêm túi thừa: đau, sốt, thay đổi thói quen đại tiện, đau khi ấn vùng đại tràng; CT là phương pháp xác định tốt nhất",
+            "Biến chứng: áp xe, thủng, dò, áp xe gan, hẹp"
+        ]
+    },
+    {
+        "question": "Tôi đau quanh rốn dữ dội, nôn, trướng bụng và đi ngoài có máu — dấu hiệu của bệnh gì?",
+        "answer": "Thiếu máu mạc treo cấp",
+        "context": [
+            "Ấn đau vùng quanh rốn, buồn nôn, nôn, trướng bụng, chảy máu đường tiêu hóa, thay đổi thói quen đại tiện"
+        ]
+    },
+    {
+        "question": "Bụng đau dữ, bị ói mửa, bụng chướng, thấy máu trong phân. Tôi có sao không?",
+        "answer": "Thiếu máu mạc treo cấp",
+        "context": [
+            "Ấn đau vùng quanh rốn, buồn nôn, nôn, trướng bụng, chảy máu đường tiêu hóa, thay đổi thói quen đại tiện"
+        ]
+    },
+    {
+        "question": "Bụng đau dữ, đi cầu ra máu, tụt huyết áp — nên nghĩ đến nguyên nhân nào?",
+        "answer": "Viêm đại tràng thiếu máu cục bộ",
+        "context": [
+            "Đau nghiêm trọng vùng bụng dưới, chảy máu trực tràng, hạ huyết áp"
+        ]
+    },
+    {
+        "question": "Tôi đi ngoài ra máu tươi, đau nhiều, có thể là bệnh gì?",
+        "answer": "Trĩ",
+        "context": [
+            "Chảy máu do tăng áp lực tĩnh mạch trĩ; liên quan táo bón, mang thai",
+            "Có thể trĩ nội, trĩ ngoại, huyết khối; điều trị gồm làm mềm phân, ngâm sitz bath, thắt bằng vòng cao su hoặc phẫu thuật nếu nặng"
+        ]
+    },
+    {
+        "question": "Đi cầu thấy dính máu đỏ tươi, hơi ngứa hậu môn, có cục sưng — có phải trĩ không?",
+        "answer": "Trĩ",
+        "context": [
+            "Chảy máu do tăng áp lực tĩnh mạch trĩ; liên quan táo bón, mang thai",
+            "Có thể trĩ nội, trĩ ngoại, huyết khối; điều trị gồm làm mềm phân, ngâm sitz bath, thắt bằng vòng cao su hoặc phẫu thuật nếu nặng"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị đau rát vùng thượng vị sau ăn hoặc về đêm, kèm buồn nôn và sụt cân. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Loét dạ dày tá tràng",
+        "context": [
+            "Đau rát vùng thượng vị sau ăn hoặc về đêm",
+            "Buồn nôn",
+            "Sụt cân",
+            "Chán ăn",
+            "Đầy bụng"
+        ]
+    },
+    {
+        "question": "Tôi thường xuyên đau rát vùng thượng vị sau ăn hoặc về đêm và buồn nôn, đôi khi còn chán ăn. Đây là bệnh gì?",
+        "answer": "Loét dạ dày tá tràng",
+        "context": [
+            "Đau rát vùng thượng vị sau ăn hoặc về đêm",
+            "Buồn nôn",
+            "Sụt cân",
+            "Chán ăn",
+            "Đầy bụng"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị đầy bụng, kèm khó tiêu và buồn nôn. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Viêm dạ dày mãn tính",
+        "context": [
+            "Đầy bụng",
+            "Khó tiêu",
+            "Buồn nôn",
+            "Chán ăn",
+            "Đau âm ỉ vùng thượng vị"
+        ]
+    },
+    {
+        "question": "Dạo này tôi hay bụng trên tức nặng, rồi ăn kém ngon và buồn ói. Tôi bị gì vậy bác sĩ?",
+        "answer": "Viêm dạ dày mãn tính",
+        "context": [
+            "Bụng trên tức nặng",
+            "Ăn kém ngon",
+            "Buồn ói",
+            "Đầy hơi",
+            "Khó tiêu"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị loét tái phát nhiều lần, kèm tiêu chảy và đau bụng. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Hội chứng Zollinger-Ellison",
+        "context": [
+            "Loét tái phát nhiều lần",
+            "Tiêu chảy",
+            "Đau bụng",
+            "Tăng tiết acid dạ dày"
+        ]
+    },
+    {
+        "question": "Dạo này tôi hay loét bao tử hoài, rồi đi tiêu nhiều lần và đau bụng. Tôi bị gì vậy bác sĩ?",
+        "answer": "Hội chứng Zollinger-Ellison",
+        "context": [
+            "Loét bao tử hoài",
+            "Đi tiêu nhiều lần",
+            "Đau bụng",
+            "Bao tử tiết nhiều axit"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị tiêu chảy phân máu, kèm đau bụng và sốt. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Viêm loét đại tràng",
+        "context": [
+            "Tiêu chảy phân máu",
+            "Đau bụng",
+            "Sốt",
+            "Sụt cân",
+            "Mệt mỏi"
+        ]
+    },
+    {
+        "question": "Dạo này tôi hay đi vệ sinh ra máu, rồi đau bụng dưới và người mệt. Tôi bị gì vậy bác sĩ?",
+        "answer": "Viêm loét đại tràng",
+        "context": [
+            "Đi vệ sinh ra máu",
+            "Đau bụng dưới",
+            "Người mệt",
+            "Sụt cân",
+            "Sốt"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị đau bụng, kèm tiêu chảy kéo dài và sụt cân. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Bệnh Crohn",
+        "context": [
+            "Đau bụng",
+            "Tiêu chảy kéo dài",
+            "Sụt cân",
+            "Sốt nhẹ",
+            "Mệt mỏi"
+        ]
+    },
+    {
+        "question": "Tôi thường xuyên đau bụng và tiêu chảy kéo dài, đôi khi còn sốt nhẹ. Đây là bệnh gì?",
+        "answer": "Bệnh Crohn",
+        "context": [
+            "Đau bụng",
+            "Tiêu chảy kéo dài",
+            "Sụt cân",
+            "Sốt nhẹ",
+            "Mệt mỏi"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị đau bụng từng cơn, kèm thay đổi số lần đại tiện và táo bón hoặc tiêu chảy. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Hội chứng ruột kích thích",
+        "context": [
+            "Đau bụng từng cơn",
+            "Thay đổi số lần đại tiện",
+            "Táo bón hoặc tiêu chảy",
+            "Đầy hơi"
+        ]
+    },
+    {
+        "question": "Dạo này tôi hay bụng đau lâm râm, rồi đi vệ sinh thất thường và có khi táo bón, có khi tiêu chảy. Tôi bị gì vậy bác sĩ?",
+        "answer": "Hội chứng ruột kích thích",
+        "context": [
+            "Bụng đau lâm râm",
+            "Đi vệ sinh thất thường",
+            "Có khi táo bón, có khi tiêu chảy",
+            "Bụng đầy hơi"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị đau bụng dưới trái, kèm sốt và thay đổi thói quen đại tiện. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Bệnh túi thừa",
+        "context": [
+            "Đau bụng dưới trái",
+            "Sốt",
+            "Thay đổi thói quen đại tiện",
+            "Táo bón hoặc tiêu chảy"
+        ]
+    },
+    {
+        "question": "Dạo này tôi hay đau bụng dưới bên trái, rồi sốt và đi vệ sinh thất thường. Tôi bị gì vậy bác sĩ?",
+        "answer": "Bệnh túi thừa",
+        "context": [
+            "Đau bụng dưới bên trái",
+            "Sốt",
+            "Đi vệ sinh thất thường",
+            "Táo bón hoặc tiêu chảy"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị đau bụng, kèm bụng trướng và buồn nôn. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Giả tắc ruột",
+        "context": [
+            "Đau bụng",
+            "Bụng trướng",
+            "Buồn nôn",
+            "Tiêu chảy mỡ"
+        ]
+    },
+    {
+        "question": "Dạo này tôi hay bụng đau, rồi bụng phình to và buồn ói. Tôi bị gì vậy bác sĩ?",
+        "answer": "Giả tắc ruột",
+        "context": [
+            "Bụng đau",
+            "Bụng phình to",
+            "Buồn ói",
+            "Đi ngoài phân nổi"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị đau bụng dưới đột ngột, kèm chảy máu trực tràng và tiêu chảy. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Viêm đại tràng thiếu máu cục bộ",
+        "context": [
+            "Đau bụng dưới đột ngột",
+            "Chảy máu trực tràng",
+            "Tiêu chảy",
+            "Sốt"
+        ]
+    },
+    {
+        "question": "Dạo này tôi hay bụng dưới đau dữ, rồi đi ngoài ra máu và tiêu chảy. Tôi bị gì vậy bác sĩ?",
+        "answer": "Viêm đại tràng thiếu máu cục bộ",
+        "context": [
+            "Bụng dưới đau dữ",
+            "Đi ngoài ra máu",
+            "Tiêu chảy",
+            "Sốt"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, tối nào tôi cũng bụng dưới đau dữ, ăn cái thì đỡ nhưng vẫn tiêu chảy. Tôi bị sao vậy?",
+        "answer": "Viêm đại tràng thiếu máu cục bộ",
+        "context": [
+            "Bụng dưới đau dữ",
+            "Đi ngoài ra máu",
+            "Tiêu chảy",
+            "Sốt"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi bị chảy máu khi đại tiện, kèm ngứa hậu môn và đau hậu môn. Tôi nên nghĩ đến bệnh gì?",
+        "answer": "Trĩ",
+        "context": [
+            "Chảy máu khi đại tiện",
+            "Ngứa hậu môn",
+            "Đau hậu môn",
+            "Có khối ở hậu môn"
+        ]
+    },
+    {
+        "question": "Tôi thường xuyên chảy máu khi đại tiện và ngứa hậu môn, đôi khi còn có khối ở hậu môn. Đây là bệnh gì?",
+        "answer": "Trĩ",
+        "context": [
+            "Chảy máu khi đại tiện",
+            "Ngứa hậu môn",
+            "Đau hậu môn",
+            "Có khối ở hậu môn"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng dữ dội vùng hạ sườn phải, kèm sốt cao, run, mắt vàng, lẫn nhẹ, huyết áp giảm, bác sĩ cấp cứu ngay.",
+        "answer": "Viêm đường mật nặng",
+        "context": [
+        "Đau hạ sườn phải",
+        "Sốt cao",
+        "Rét run",
+        "Vàng mắt",
+        "Lẫn nhẹ",
+        "Huyết áp thấp"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng nhẹ nhưng dai dẳng, ngứa da, ăn uống kém, mắt vàng, gầy, men gan và phosphatase kiềm tăng cao.",
+        "answer": "Viêm đường mật mạn",
+        "context": [
+        "Đau bụng nhẹ kéo dài",
+        "Ngứa da",
+        "Chán ăn",
+        "Vàng mắt",
+        "Sụt cân",
+        "Men gan tăng",
+        "Phosphatase kiềm tăng"
+        ]
+    },
+    {
+        "question": "Tôi uống rượu nhiều năm, giờ bụng to, chân phù, mắt vàng, dễ chảy máu chân răng, xét nghiệm tiểu cầu thấp.",
+        "answer": "Xơ gan do rượu",
+        "context": [
+        "Tiền sử uống rượu nhiều",
+        "Bụng to",
+        "Phù chân",
+        "Vàng mắt",
+        "Chảy máu chân răng",
+        "Tiểu cầu thấp"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng, da vàng, ngứa, gầy, đi tiêu phân nhạt, siêu âm thấy khối ở đầu tụy chèn ống mật chủ.",
+        "answer": "Ung thư đầu tụy",
+        "context": [
+        "Đau bụng",
+        "Vàng da",
+        "Ngứa",
+        "Sụt cân",
+        "Phân bạc màu",
+        "Khối đầu tụy"
+        ]
+    },
+    {
+        "question": "Tôi thấy vàng da, buồn ngủ nhiều, tay run, nói chậm, xét nghiệm amoniac máu cao, men gan tăng.",
+        "answer": "Bệnh não gan",
+        "context": [
+        "Vàng da",
+        "Buồn ngủ",
+        "Run tay",
+        "Nói chậm",
+        "Amoniac máu cao",
+        "Men gan tăng"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, bụng tôi trướng to nhanh, da vàng, chân phù, mệt mỏi, khó thở khi nằm, xét nghiệm albumin thấp, dịch cổ trướng nhiều.",
+        "answer": "Cổ trướng do xơ gan mất bù",
+        "context": [
+        "Bụng to nhanh",
+        "Vàng da",
+        "Phù chân",
+        "Khó thở khi nằm",
+        "Albumin thấp",
+        "Cổ trướng nhiều"
+        ]
+    },
+    {
+        "question": "Tự nhiên tôi đau bụng dữ dội vùng thượng vị, cơn đau xuyên ra sau lưng, nôn nhiều, mồ hôi lạnh, huyết áp giảm, xét nghiệm amylase và lipase tăng rất cao.",
+        "answer": "Viêm tụy cấp nặng",
+        "context": [
+        "Đau thượng vị dữ dội",
+        "Lan ra sau lưng",
+        "Nôn nhiều",
+        "Mồ hôi lạnh",
+        "Huyết áp thấp",
+        "Amylase cao",
+        "Lipase cao"
+        ]
+    },
+    {
+    "question": "Tôi bị sốt, đau bụng, nôn, xét nghiệm lipase tăng cao nhưng amylase bình thường, bác sĩ vẫn nói viêm tụy cấp.",
+        "answer": "Viêm tụy cấp",
+        "context": [
+        "Sốt",
+        "Đau bụng",
+        "Lipase tăng",
+        "Amylase bình thường"
+        ]
+    },
+    {
+        "question": "Tôi đang bị viêm gan B mạn, gần đây vàng da nhiều hơn, mệt, xét nghiệm anti-HDV hiệu giá cao.",
+        "answer": "Bội nhiễm viêm gan D",
+        "context": [
+        "Viêm gan B mạn",
+        "Vàng da tăng",
+        "Mệt mỏi",
+        "anti-HDV cao"
+        ]
+    },
+    {
+        "question": "Tôi vàng da đậm, lơ mơ, tay run, khó thở, xét nghiệm rối loạn đông máu, creatinine máu tăng.",
+        "answer": "Suy gan cấp",
+        "context": [
+        "Vàng da đậm",
+        "Lơ mơ",
+        "Run tay",
+        "Khó thở",
+        "Rối loạn đông máu",
+        "Creatinine tăng"
+        ]
+    },
+    {
+        "question": "Tôi hay ngứa toàn thân, đặc biệt là ban đêm, da vàng, ăn kém, sụt cân nhanh, phân bạc màu, nước tiểu đậm, xét nghiệm thấy phosphatase kiềm rất cao.",
+        "answer": "Ứ mật trong gan",
+        "context": [
+        "Ngứa nhiều về đêm",
+        "Vàng da",
+        "Sụt cân nhanh",
+        "Phân bạc màu",
+        "Nước tiểu đậm",
+        "Phosphatase kiềm cao"
+        ]
+    },
+    {
+        "question": "Bụng tôi sưng nhanh, khó thở, dịch chọc ra quanh tụy xét nghiệm có amylase rất cao, bác sĩ bảo do biến chứng viêm tụy.",
+        "answer": "Cổ trướng tụy",
+        "context": [
+        "Bụng to nhanh",
+        "Khó thở",
+        "Dịch quanh tụy amylase cao"
+        ]
+    },
+    {
+        "question": "Mấy hôm nay tôi mệt rũ người, ăn không thấy ngon, buổi chiều lại sốt nhẹ, mắt vàng, tiểu vàng sẫm, bác sĩ nói nghi viêm gan A.",
+        "answer": "Viêm gan A cấp",
+        "context": [
+        "Mệt mỏi",
+        "Chán ăn",
+        "Sốt nhẹ buổi chiều",
+        "Vàng mắt",
+        "Tiểu vàng sẫm"
+        ]
+    },
+    {
+        "question": "Tôi có viêm gan B mạn, dạo này vàng da rõ hơn, ăn uống kém, xét nghiệm anti-HDV hiệu giá cao.",
+        "answer": "Bội nhiễm viêm gan D",
+        "context": [
+        "Viêm gan B mạn",
+        "Vàng da tăng",
+        "Ăn kém",
+        "anti-HDV hiệu giá cao"
+        ]
+    },
+    {
+        "question": "Tôi uống thảo dược mua online, 2 tuần sau vàng da, mệt, xét nghiệm men gan rất cao, loại trừ viêm gan virus.",
+        "answer": "Viêm gan do thuốc",
+        "context": [
+        "Uống thảo dược",
+        "Vàng da",
+        "Mệt mỏi",
+        "Men gan rất cao",
+        "Không do virus"
+        ]
+    },
+    {
+        "question": "Tôi thấy mệt, chán ăn, sốt nhẹ về chiều, da vàng, xét nghiệm anti-HAV IgM (+), gan hơi to.",
+        "answer": "Viêm gan A cấp",
+        "context": [
+        "Mệt mỏi",
+        "Chán ăn",
+        "Sốt nhẹ chiều",
+        "Vàng da",
+        "anti-HAV IgM (+)",
+        "Gan to"
+        ]
+    },
+    {
+        "question": "Tôi bị vàng mắt, tay run, khó nói, trí nhớ giảm nhanh, xét nghiệm ammoniac máu cao.",
+        "answer": "Bệnh não gan",
+        "context": [
+        "Vàng mắt",
+        "Run tay",
+        "Khó nói",
+        "Giảm trí nhớ",
+        "Ammoniac máu cao"
+        ]
+    },
+    {
+        "question": "Tôi đang mang thai 8 tháng, tự nhiên sốt nhẹ, vàng mắt, mệt, xét nghiệm HEV dương tính, men gan rất cao.",
+        "answer": "Viêm gan E cấp ở phụ nữ mang thai",
+        "context": [
+        "Mang thai 8 tháng",
+        "Sốt nhẹ",
+        "Vàng mắt",
+        "Mệt",
+        "HEV (+)",
+        "Men gan cao"
+        ]
+    },
+    {
+        "question": "Tôi đi công tác vùng dịch HEV, 1 tháng sau sốt nhẹ, vàng da, ăn uống kém, HEV (+).",
+        "answer": "Viêm gan E cấp",
+        "context": [
+        "Đi công tác vùng dịch",
+        "Sốt",
+        "Vàng da",
+        "Chán ăn",
+        "HEV (+)"
+        ]
+    },
+    {
+        "question": "Tôi có dấu hiệu vàng da, lơ mơ, tiểu ít, xét nghiệm creatinine tăng, INR kéo dài, bác sĩ bảo suy gan cấp.",
+        "answer": "Suy gan cấp",
+        "context": [
+        "Vàng da",
+        "Lơ mơ",
+        "Tiểu ít",
+        "Creatinine tăng",
+        "INR kéo dài"
+        ]
+    },
+    {
+        "question": "Tôi thấy người ngứa khắp nơi, đặc biệt về đêm, vàng da, ăn uống kém, sụt cân, phân bạc màu, nước tiểu rất đậm, siêu âm cho thấy đường mật trong gan giãn.",
+        "answer": "Tắc mật trong gan",
+        "context": [
+        "Ngứa về đêm",
+        "Vàng da",
+        "Sụt cân",
+        "Phân bạc màu",
+        "Nước tiểu đậm",
+        "Đường mật trong gan giãn"
+        ]
+    },
+    {
+        "question": "Bữa giờ tôi đau quặn vùng hạ sườn phải dữ dội, sốt 39°C, buồn nôn, nôn, người mệt mỏi, vàng da nhẹ, khi ấn vào hạ sườn phải thì đau và tôi phải ngừng hít vào.",
+        "answer": "Viêm túi mật cấp",
+        "context": [
+        "Đau hạ sườn phải",
+        "Sốt cao",
+        "Buồn nôn, nôn",
+        "Vàng da nhẹ"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng trên bên phải từng đợt, hay xuất hiện sau khi ăn đồ chiên rán, kèm đầy hơi, khó tiêu, buồn nôn, siêu âm thấy túi mật teo chứa sỏi.",
+        "answer": "Viêm túi mật mạn",
+        "context": [
+        "Đau bụng hạ sườn phải từng đợt",
+        "Khó tiêu",
+        "Buồn nôn",
+        "Siêu âm túi mật teo có sỏi"
+        ]
+    },
+    {
+        "question": "Tôi cực kì đau ở giữa bụng lan ra sau lưng, nôn nhiều, sốt nhẹ, mạch nhanh, huyết áp thấp, bụng chướng, xét nghiệm amylase và lipase tăng cao.",
+        "answer": "Viêm tụy cấp",
+        "context": [
+        "Đau thượng vị lan ra sau lưng",
+        "Nôn nhiều",
+        "Sốt nhẹ",
+        "Mạch nhanh, huyết áp thấp",
+        "Bụng chướng",
+        "Amylase tăng",
+        "Lipase tăng"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng âm ỉ kéo dài nhiều năm, sụt cân, tiêu phân mỡ, thỉnh thoảng đau quặn từng đợt, uống rượu nhiều năm, xét nghiệm amylase máu bình thường.",
+        "answer": "Viêm tụy mạn",
+        "context": [
+        "Đau bụng tái diễn",
+        "Sụt cân",
+        "Tiêu phân mỡ",
+        "Tiền sử uống rượu",
+        "Amylase bình thường"
+        ]
+    },
+    {
+        "question": "Tôi bị đau âm ỉ bụng trên, đầy hơi, hay buồn nôn, cũng thỉnh thoảng tiêu chảy, phân mỡ nổi trên mặt nước, 2 tháng nay sụt hơn 5kg.",
+        "answer": "Viêm tụy mạn",
+        "context": [
+        "Đau bụng trên âm ỉ",
+        "Đầy hơi",
+        "Buồn nôn",
+        "Tiêu phân mỡ",
+        "Sụt cân nhanh"
+        ]
+    },
+    {
+        "question": "Tôi sốt 39°C, rét run nè, vàng da rõ, đau hạ sườn phải, mạch nhanh, xét nghiệm bạch cầu tăng cao, bilirubin máu và phosphatase kiềm tăng.",
+        "answer": "Viêm đường mật cấp",
+        "context": [
+        "Sốt cao",
+        "rét run",
+        "Vàng da",
+        "Đau hạ sườn phải",
+        "Bạch cầu tăng",
+        "Bilirubin, phosphatase kiềm tăng"
+        ]
+    },
+    {
+        "question": "Tôi bị ngứa toàn thân, vàng da, đau âm ỉ hạ sườn phải, mệt mỏi, sụt cân, xét nghiệm phosphatase kiềm tăng, bilirubin tăng, siêu âm đường mật giãn.",
+        "answer": "Viêm xơ đường mật nguyên phát",
+        "context": [
+        "Ngứa toàn thân",
+        "Vàng da",
+        "Đau hạ sườn phải",
+        "Sụt cân",
+        "Phosphatase kiềm tăng",
+        "Đường mật giãn trên siêu âm"
+        ]
+    },
+    {
+        "question": "Tôi mệt mỏi, chán ăn, sốt nhẹ, tiêu chảy, nước tiểu sẫm, vàng da, gan to mềm, xét nghiệm AST và ALT tăng cao.",
+        "answer": "Viêm gan vi rút cấp",
+        "context": [
+        "Mệt mỏi, chán ăn",
+        "Sốt nhẹ",
+        "Tiêu chảy",
+        "Nước tiểu sẫm",
+        "Vàng da",
+        "Gan to mềm",
+        "AST, ALT tăng"
+        ]
+    },
+    {
+        "question": "Sau khi ăn hải sản ở vùng đang có dịch, tôi bị sốt nhẹ, tiêu chảy, vàng da, xét nghiệm IgM anti-HAV (+), gan to mềm.",
+        "answer": "Viêm gan A cấp",
+        "context": [
+        "Sốt nhẹ",
+        "Tiêu chảy",
+        "Vàng da",
+        "IgM anti-HAV (+)",
+        "Gan to mềm"
+        ]
+    },
+    {
+        "question": "Em hay bị mệt mỏi, chán ăn, buổi chiều lại sốt nhẹ, da hơi vàng, xét nghiệm cho thấy viêm gan C, men gan tăng.",
+        "answer": "Viêm gan C cấp",
+        "context": [
+        "Mệt mỏi",
+        "Chán ăn",
+        "Sốt nhẹ buổi chiều",
+        "Vàng da nhẹ",
+        "Men gan tăng",
+        "anti-HCV (+)"
+        ]
+    },
+    {
+        "question": "Tôi mang thai 7 tháng, bị sốt nhẹ, mệt mỏi, vàng da đậm, xét nghiệm HEV (+), men gan tăng cao.",
+        "answer": "Viêm gan E cấp ở phụ nữ mang thai",
+        "context": [
+        "Mang thai 7 tháng",
+        "Sốt nhẹ",
+        "Vàng da đậm",
+        "HEV (+)",
+        "Men gan tăng cao"
+        ]
+    },
+    {
+        "question": "Tôi bị vàng da, đau hạ sườn phải, mệt mỏi, trước đây đã bị viêm gan B mạn, xét nghiệm anti-HDV hiệu giá cao.",
+        "answer": "Bội nhiễm viêm gan D",
+        "context": [
+        "Vàng da",
+        "Đau hạ sườn phải",
+        "Tiền sử viêm gan B mạn",
+        "anti-HDV hiệu giá cao"
+        ]
+    },
+    {
+        "question": "Tôi uống quá liều paracetamol, vài ngày sau bị vàng da, mệt, buồn nôn, xét nghiệm men gan >3000 U/L, INR kéo dài.",
+        "answer": "Viêm gan do thuốc",
+        "context": [
+        "Quá liều paracetamol",
+        "Vàng da",
+        "Buồn nôn",
+        "Men gan >3000 U/L",
+        "INR kéo dài"
+        ]
+    },
+    {
+        "question": "Tôi vàng da đậm, lơ mơ, khó thở, phù não, xét nghiệm rối loạn đông máu, creatinine máu tăng.",
+        "answer": "Suy gan cấp",
+        "context": [
+        "Vàng da đậm",
+        "Lơ mơ, thay đổi ý thức",
+        "Phù não",
+        "Rối loạn đông máu",
+        "Creatinine tăng"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng dữ dội vùng thượng vị, vàng da, sốt sau khi bị sỏi mật, xét nghiệm amylase và lipase tăng.",
+        "answer": "Viêm tụy cấp do sỏi mật",
+        "context": [
+        "Đau thượng vị",
+        "Vàng da",
+        "Sốt",
+        "Có sỏi mật",
+        "Amylase, lipase tăng"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng dữ dội, da xanh tím quanh rốn, mạch nhanh, huyết áp tụt, bác sĩ nói dấu Cullen dương tính.",
+        "answer": "Viêm tụy hoại tử",
+        "context": [
+        "Đau bụng dữ dội",
+        "Dấu Cullen (+)",
+        "Mạch nhanh",
+        "Huyết áp thấp"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng, sờ thấy khối trên bụng, sốt nhẹ, siêu âm cho thấy nang giả tụy lớn tồn tại hơn 6 tuần.",
+        "answer": "Nang giả tụy",
+        "context": [
+        "Đau bụng",
+        "Sờ thấy khối bụng",
+        "Sốt nhẹ",
+        "Nang giả tụy >6 tuần"
+        ]
+    },
+    {
+        "question": "Tôi đau bụng, sốt, lipase tăng cao, amylase bình thường.",
+        "answer": "Viêm tụy cấp",
+        "context": [
+        "Đau bụng",
+        "Sốt",
+        "Lipase tăng",
+        "Amylase bình thường"
+        ]
+    },
+    {
+        "question": "Tôi ngứa nhiều, vàng da, mệt mỏi, xét nghiệm phosphatase kiềm tăng, bilirubin tăng, siêu âm thấy đường mật trong gan giãn.",
+        "answer": "Tắc mật trong gan",
+        "context": [
+        "Ngứa",
+        "Vàng da",
+        "Mệt mỏi",
+        "Phosphatase kiềm tăng",
+        "Đường mật trong gan giãn"
+        ]
+    },
+    {
+        "question": "Tôi đau hạ sườn phải, sốt, vàng da, bạch cầu tăng, cấy máu dương tính với vi khuẩn gram âm.",
+        "answer": "Viêm đường mật cấp",
+        "context": [
+        "Đau hạ sườn phải",
+        "Sốt",
+        "Vàng da",
+        "Bạch cầu tăng",
+        "Cấy máu (+)"
+        ]
+    },
+    {
+        "question": "Tôi bị vàng mắt gần 2 tuần nay, ăn không thấy ngon, người mệt, tối hay sốt nhẹ, tiểu vàng sẫm, phân lỏng, gan sờ to, xét nghiệm bảo men gan tăng gấp 5 lần bình thường.",
+        "answer": "Viêm gan vi rút cấp",
+        "context": [
+        "Vàng mắt",
+        "Mệt mỏi",
+        "Sốt nhẹ về tối",
+        "Tiểu vàng sẫm",
+        "Tiêu chảy",
+        "Gan to",
+        "Men gan tăng"
+        ]
+    },
+    {
+        "question": "Tôi hay ngứa về đêm, gãi trầy da luôn, mắt vàng, bụng đôi khi đau râm râm, ăn uống kém, sụt gần 4kg trong 2 tháng, phân bạc màu, nước tiểu đậm đặc.",
+        "answer": "Ứ mật trong gan",
+        "context": [
+        "Ngứa về đêm",
+        "Vàng mắt",
+        "Đau hạ sườn phải nhẹ",
+        "Chán ăn",
+        "Sụt cân",
+        "Phân bạc màu",
+        "Nước tiểu đậm"
+        ]
+    },
+    {
+        "question": "Tôi bị đau vùng thượng vị suốt từ tối qua, uống thuốc giảm đau không đỡ, lại sốt nhẹ và ra mồ hôi lạnh, bụng hơi chướng, nôn vài lần nhưng chỉ ra dịch vàng.",
+        "answer": "Viêm tụy cấp",
+        "context": [
+        "Đau thượng vị kéo dài",
+        "Sốt nhẹ",
+        "Mồ hôi lạnh",
+        "Bụng chướng",
+        "Nôn dịch vàng"
+        ]
+    },
+    {
+        "question": "Tôi mới đi công tác vùng biển về thì 3 ngày sau sốt nhẹ, tiêu chảy, vàng da, chán ăn, nước tiểu vàng đậm, bác sĩ nói viêm gan A.",
+        "answer": "Viêm gan A cấp",
+        "context": [
+        "Sốt nhẹ",
+        "Tiêu chảy",
+        "Vàng da",
+        "Chán ăn",
+        "Nước tiểu vàng đậm",
+        "anti-HAV IgM (+)"
+        ]
+    },
+    {
+        "question": "Tôi bị dạo này bị Phát ban, nổi mề đay, viêm khớp",
+        "answer" : "Viêm gan B mãn tính",
+        "context" : [
+            "phát ban",
+            "nỗi mề đay",
+            "viêm khớp"
+        ]
+    },
+    {
+        "question": "Thường ngày tôi bị Phát ban, đau khớp, khô mắt",
+        "answer" : "Viêm gan tự miễn",
+        "context" : [
+            "Phát ban",
+            "đau khóp",
+            "khô mắt"
+        ]
+    },
+    {
+        "question": "Tôi ưa bị Chán ăn,buồn nôn,ỉa chảy,đau âm ỉ hạ sườn phải , mệt mỏi",
+        "answer" : "Xơ gan",
+        "context" : [
+            "Chán ăn",
+            "buồn nôn",
+            "ỉa chảy",
+            "mệt mỏi",
+            "Vàng da"
+        ]
+    },
+    {
+        "question": "Tôi ưa bị Ngứa, mệt mỏi, vàng da,",
+        "answer" : "XƠ GAN MẬT NGUYÊN PHÁT (PBC)",
+        "context" : [
+            "Ngứa",
+            "mệt mỏi",
+            "vàng da",
+            "tăng sắc tố da",
+            "gan lách to"
+        ]
+    },
+    {
+        "question": "Ông ấy bị Lú lẫn, nói lắp, thay đổi tính buồn ngủ và khó kiêu dậy",
+        "answer" : "Bệnh lý não gan",
+        "context" : [
+            "Lú lẫn",
+            "nói lắp",
+            "thay đổi tính",
+            "khó đánh thức,",
+            "suy tư thế vận động (asterixis -dấu hiệu flapping tremor)"
+        ]
+    }, 
+    {
+        "question": "Bị thể sốt, phán ban, đau khớp",
+        "answer": "VIÊM GAN DO THUỐC VÀ NHIỄM ĐỘC",
+        "context": [
+            "sốt" ,
+            "phán ban" ,
+            "đau khớp"
+        ]
+    },
+    {
+        "question":"Cụ bị mê sảng, thay đổi hành vi, lơ mơ, hôn mê",
+        "answer" : "SUY GAN CẤP",
+        "context": [
+            "mê sảng" ,
+            "thay đổi hành vi",
+            "lơ mơ",
+            "hôn mê"
+        ]
+    },
+    {
+        "question": "Hôm qua tới giờ bị gồm mệt mỏi, khó chịu, chán ăn, sốt nhẹ; vàng da",
+        "answer": "Viêm gan mãn tính",
+        "context": [
+            "mệt mỏi",
+            "khó chịu",
+            "chán ăn",
+            "sốt nhẹ",
+            "vàng da"
+        ]
+    },
+    {
+        "question": "Tôi bị ngứa ngáy nhiều vào ban đêm, da vàng, sụt cân nhanh, chán ăn ,phân bạc màu, nước tiểu đậm",
+        "answer": "Ứ mật trong gan",
+        "context": [
+        "Ngứa nhiều về đêm",
+        "Phân bạc màu",
+        "Vàng da",
+        "Sụt cân",
+        "Nước tiểu đậm"
+        ]
+    },
+    {
+        "question":"Tôi bị Viêm da dị ứng, nhạy cảm tiếp xúc",
+        "answer": "Mề đay và phù mạch",
+        "context": [
+            "Viêm da, dị ứng",
+            "nhạy cảm tiếp xúc"
+        ]
+    },
+    {
+        "question": "Tôi thì nổi mề đay sắc tố đau quặn bụng ngứa đỏ bừng,",
+        "answer": "BỆNH TẾ BÀO MAST HỆ THỐNG",
+        "context" : [
+            "nổi mề đay", 
+            "tố đau quặn bụng",
+            "ngứa"
+        ]
+    },
+    {
+    "question": "Tôi thấy khó thở khi đứng dậy, môi bị tím.",
+    "answer": "Hội chứng gan–phổi",
+    "context": [
+      "Khó thở tăng khi đứng (platypnea)",
+      "Oxy giảm khi đứng (orthodeoxia)",
+      "Giãn mạch trong phổi (intrapulmonary vasodilation)"
+        ]
+    },
+    {
+        "question": "Tôi ói ra máu và đi phân đen",
+        "answer": "Giãn tĩnh mạch thực quản (do tăng áp cửa)",
+        "context": [
+        "Xuất huyết tiêu hoá trên (UGIB)",
+        "Varices thực quản/dạ dày",
+        "Liên quan xơ gan"
+        ]
+    },
+    {
+        "question": "bụng tôi trướng to nhanh, da vàng, chân phù, mệt mỏi, khó thở khi nằm, xét nghiệm albumin thấp, dịch cổ trướng nhiều.",
+        "answer": "Cổ trướng do xơ gan mất bù",
+        "context": [
+        "Bụng to nhanh",
+        "Vàng da",
+        "Phù chân",
+        "Khó thở khi nằm",
+        "Albumin thấp",
+        "Cổ trướng nhiều"
+        ]
+    },
+    {
+        "question": "Tôi nhiễm gan B mạn, bị vàng da nhiều hơn, mệt",
+        "answer": "Bội nhiễm viêm gan D",
+        "context": [
+        "Mệt mỏi",
+        "Viêm gan B mạn",
+        "Vàng da tăng"
+        ]
+    },
+    {
+        "question": "Tôi bị người ngứa toàn thân, vàng da, chán ăn , sụt cân, phân bạc màu, nước tiểu rất đậm.",
+        "answer": "Tắc mật trong gan",
+        "context": [
+        "Ngứa",
+        "Đường mật trong gan giãn",
+        "Vàng da",
+        "Sụt cân",
+        "Nước tiểu đậm",
+        "Phân bạc màu"
+        ]
+    },
+    {
+        "question": "Tôi rất đau ở giữa bụng lan ra sau lưng, nôn nhiều, bụng chướng, sốt nhẹ, mạch nhanh, huyết áp thấp",
+        "answer": "Viêm tụy cấp",
+        "context": [
+        "Đau thượng vị lan ra sau lưng",
+        "Nôn nhiều",
+        "Sốt nhẹ",
+        "Mạch nhanh, huyết áp thấp",
+        "Bụng chướng"
+        ]
+    },
+    {
+        "question": "Tôi bị ngứa toàn ngáy khắp người, vàng da, đau âm ỉ hạ sườn phải, mệt mỏi, sụt cân, bilirubin tăng, siêu âm đường mật giãn.",
+        "answer": "Viêm xơ đường mật nguyên phát",
+        "context": [
+        "Ngứa toàn thân",
+        "Vàng da",
+        "Phosphatase kiềm tăng",
+        "Đường mật giãn trên siêu âm",
+        "Đau hạ sườn phải",
+        "Sụt cân"
+        ]
+    },
+    {
+        "question": "Cô có chiệu trứng bị Lú lẫn, nói lắp, thay đổi tính buồn ngủ và khó kiêu dậy",
+        "answer" : "Bệnh lý não gan",
+        "context" : [
+            "Lú lẫn",
+            "nói lắp",
+            "thay đổi tính",
+            "khó đánh thức,",
+            "suy tư thế vận động (asterixis -dấu hiệu flapping tremor)"
+        ]
+    }, 
+    {
+        "question": "Mấy ngày qua tôi bị Phát ban, nổi mề đay, viêm khớp",
+        "answer" : "Viêm gan B mãn tính",
+        "context" : [
+            "phát ban",
+            "nỗi mề đay",
+            "viêm khớp"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, dạo này tôi mệt, chán ăn, da hơi vàng và có mấy chấm đỏ như hình sao trên ngực. Tôi bị gì?",
+        "answer": "Xơ gan (giai đoạn còn bù)",
+        "context": [
+        "Mệt mỏi, chán ăn",
+        "Vàng da (jaundice) nhẹ",
+        "Sao mạch và lòng bàn tay đỏ (spider angiomas, palmar erythema)"
+        ]
+    },
+    {
+        "question": "Bụng tôi trướng như có nước, da vàng hơn và rất dễ bầm tím.",
+        "answer": "Xơ gan mất bù",
+        "context": [
+        "Bụng có dịch (ascites)",
+        "Vàng da tăng",
+        "Dễ chảy máu, bầm tím (coagulopathy)"
+        ]
+    },
+    {
+        "question": "Tôi uống rượu nhiều năm, gần đây sốt nhẹ, ăn không ngon, vàng da và ấn vùng gan thì đau.",
+        "answer": "Viêm gan do rượu",
+        "context": [
+        "Sốt nhẹ, chán ăn",
+        "Gan to ấn đau (tender hepatomegaly)",
+        "AST/ALT thường > 2 (gợi ý rượu)"
+        ]
+    },
+    {
+        "question": "Tôi hay nhậu nhưng chỉ thấy gan hơi to, xét nghiệm lệch nhẹ; bỏ rượu thì đỡ.",
+        "answer": "Gan nhiễm mỡ do rượu",
+        "context": [
+        "Ít/không triệu chứng rõ",
+        "Gan to nhẹ trên siêu âm",
+        "Cải thiện khi ngừng rượu (reversible)"
+        ]
+    },
+    {
+        "question": "Tôi ngứa da kéo dài, mệt mỏi; xét nghiệm nói men tắc mật cao và có kháng thể ty thể.",
+        "answer": "Xơ gan mật nguyên phát (PBC)",
+        "context": [
+        "Ngứa (pruritus) mạn",
+        "Phosphatase kiềm tăng (ALP↑)",
+        "AMA dương tính (~90%)"
+        ]
+    },
+    {
+        "question": "Nhậu lâu năm, giờ bụng có nước, vàng mắt và từng nôn ra máu.",
+        "answer": "Xơ gan do rượu với tăng áp lực cửa",
+        "context": [
+        "Tăng áp cửa (portal hypertension)",
+        "Giãn tĩnh mạch thực quản (varices)",
+        "Cổ trướng (ascites)"
+        ]
+    },
+    {
+        "question": "Tôi bị xơ gan, nay sốt và đau bụng, thấy bụng trướng hơn bình thường.",
+        "answer": "Nhiễm khuẩn phúc mạc tự phát (SBP)",
+        "context": [
+        "Sốt (fever)",
+        "Đau bụng (abdominal pain)",
+        "Dịch báng tăng (worsening ascites)"
+        ]
+    },
+    {
+        "question": "Gần đây tôi hay lẫn, buồn ngủ và khi duỗi tay thì run run như vỗ cánh.",
+        "answer": "Bệnh não gan",
+        "context": [
+        "Lú lẫn (confusion)",
+        "Buồn ngủ, chậm chạp (somnolence)",
+        "Run vỗ cánh (asterixis)"
+        ]
+    },
+    {
+        "question": "Tôi xơ gan và thấy khó thở hơn khi đứng dậy, môi hơi tím.",
+        "answer": "Hội chứng gan–phổi",
+        "context": [
+        "Khó thở tăng khi đứng (platypnea)",
+        "Oxy giảm khi đứng (orthodeoxia)",
+        "Giãn mạch trong phổi (intrapulmonary vasodilation)"
+        ]
+    },
+    {
+        "question": "Tôi xơ gan, dạo này đi tiểu ít hẳn, xét nghiệm thận tăng mà không bị mất nước hay dùng thuốc độc thận.",
+        "answer": "Hội chứng gan–thận",
+        "context": [
+        "Thiểu niệu (oliguria)",
+        "Creatinine tăng",
+        "Không do sốc/độc thận (functional AKI)"
+        ]
+    },
+    {
+        "question": "Tôi rất dễ chảy máu cam, trầy xước là bầm lớn; xét nghiệm bảo máu đông chậm.",
+        "answer": "Rối loạn đông máu do xơ gan",
+        "context": [
+        "PT/INR kéo dài",
+        "Giảm tiểu cầu (thrombocytopenia)",
+        "Giảm yếu tố đông máu"
+        ]
+    },
+    {
+        "question": "Tôi từng ói ra máu và đi phân đen; nội soi nói tĩnh mạch thực quản phồng to.",
+        "answer": "Giãn tĩnh mạch thực quản (do tăng áp cửa)",
+        "context": [
+        "Xuất huyết tiêu hoá trên (UGIB)",
+        "Varices thực quản/dạ dày",
+        "Liên quan xơ gan"
+        ]
+    },
+    {
+        "question": "Bác sĩ nói lá lách tôi to; tôi hay thiếu máu và tiểu cầu thấp.",
+        "answer": "Tăng hoạt lách (do tăng áp cửa)",
+        "context": [
+        "Lách to (splenomegaly)",
+        "Thiếu máu, giảm tiểu cầu",
+        "Giảm bạch cầu trung tính"
+        ]
+    },
+    {
+        "question": "Tôi đau tức âm ỉ vùng gan, vàng mắt; đầu ngón tay tròn, bàn tay có dây gân co kéo.",
+        "answer": "Xơ gan mạn",
+        "context": [
+        "Đau âm ỉ hạ sườn phải",
+        "Ngón tay dùi trống (clubbing)",
+        "Co thắt Dupuytren (Dupuytren contracture)"
+        ]
+    },
+    {
+        "question": "Tôi gần 50 tuổi, ngứa hoài, quanh mắt có mảng vàng và đi ngoài phân nổi váng mỡ.",
+        "answer": "PBC có kém hấp thu mỡ",
+        "context": [
+        "Ngứa và xanthelasma/xanthoma",
+        "Phân mỡ (steatorrhea)",
+        "Thiếu vitamin tan trong mỡ (A, D, E, K)"
+        ]
+    },
+    {
+        "question": "Bác sĩ nội soi bảo dạ dày tôi dễ rỉ máu do áp lực mạch máu cửa cao.",
+        "answer": "Bệnh dạ dày do tăng áp cửa",
+        "context": [
+        "Niêm mạc đỏ dạng lưới (portal hypertensive gastropathy)",
+        "Thiếu máu mạn hoặc xuất huyết",
+        "Gặp trong tăng áp cửa"
+        ]
+    },
+    {
+        "question": "Tôi xơ gan đang uống thuốc thải nước, gần đây hay choáng; xét nghiệm nói natri máu thấp.",
+        "answer": "Hạ natri máu do xơ gan",
+        "context": [
+        "Hyponatremia",
+        "Có thể kèm nhiễm kiềm, hạ kali",
+        "Liên quan giữ nước/muối bất thường"
+        ]
+    },
+    {
+        "question": "Tôi vàng da rõ, bác sĩ bảo thời gian đông máu kéo dài; nói tình trạng nặng.",
+        "answer": "Viêm gan do rượu nặng",
+        "context": [
+        "Bilirubin rất cao",
+        "PT kéo dài",
+        "Điểm DF (Maddrey) ≥ 32"
+        ]
+    },
+    {
+        "question": "Tôi xơ gan, leo cầu thang là hụt hơi; bác sĩ nói áp lực mạch máu phổi cao do gan.",
+        "answer": "Tăng áp phổi do tăng áp cửa",
+        "context": [
+        "Khó thở gắng sức",
+        "Tăng áp động mạch phổi (pulmonary hypertension)",
+        "Liên quan bệnh gan mạn"
+        ]
+    },
+    {
+        "question": "Tự nhiên bụng tôi to dần như chứa nước, chân phù và ăn kém.",
+        "answer": "Cổ trướng do xơ gan",
+        "context": [
+        "Giữ muối nước (sodium/water retention)",
+        "Tăng áp cửa, giảm albumin",
+        "Nguy cơ SBP"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, dạo này tôi bị chán ăn, buồn nôn, tiêu chảy, đau âm ỉ hạ sườn phải, mệt mỏi. Thì tôi có thể mắc những bệnh gì",
+        "answer": "Xơ gan",
+        "context": [
+            "Chán ăn kéo dài",
+            "Buồn nôn, nôn",
+            "Tiêu chảy, mệt mỏi, suy nhược",
+            "Đau âm ỉ hạ sườn phải",
+            "Vàng da"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, gần đây tôi cảm thấy mệt mỏi, khó chịu, chán ăn, sốt nhẹ và da hơi vàng, và có xuất hiện các biến chứng xơ gan: cổ trưởng, dãn tĩnh mạch chảy máu, bệnh lý não và lách to. Tôi có thể bị bệnh gì?",
+        "answer": "Viêm gan mãn tính",
+        "context": [
+            "Mệt mỏi",
+            "Khó chịu",
+            "Chán ăn",
+            "Sốt nhẹ",
+            "Vàng da",
+            "biến chứng xơ gan: cổ trưởng, dãn tĩnh mạch chảy máu, bệnh lý não và lách to"
+        ]
+    },
+    {
+        "question": "Thưa bác sĩ, dạo này người tôi hay mệt rã rời, ăn uống không ngon miệng, hơi sốt và da dẻ vàng vọt. Có thể mắc bệnh gì vậy?",
+        "answer": "Viêm gan mãn tính",
+        "context": [
+            "Mệt mỏi",
+            "Khó chịu",
+            "Chán ăn",
+            "Sốt nhẹ",
+            "Vàng da",
+            "biến chứng xơ gan: cổ trưởng, dãn tĩnh mạch chảy máu, bệnh lý não và lách to"
+        ]
+    },
+    {
+        "question": "Bác sĩ, tôi bị phát ban, nổi mề đay, viêm khớp kèm theo mệt mỏi và biểu hiện viêm gan. Có thể là bệnh gì?",
+        "answer": "Viêm gan B mãn tính",
+        "context": [
+            "Phát ban",
+            "Nổi mề đay",
+            "Viêm khớp",
+            "Mệt mỏi",
+            "Viêm gan"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, da tôi hay nổi mụn đỏ, ngứa ngáy, khớp xương đau nhức, người mệt và gan hình như có vấn đề. Bệnh gì thế?",
+        "answer": "Viêm gan B mãn tính",
+        "context": [
+            "Phát ban",
+            "Nổi mề đay",
+            "Viêm khớp",
+            "Mệt mỏi",
+            "Viêm gan"
+        ]
+    },
+    {
+        "question": "Thưa bác sĩ, tôi có triệu chứng aminotransferase tăng nhẹ, mệt mỏi và một số biểu hiện ngoài gan như cryoglobulin huyết, rối loạn chuyển hóa porphyria. Tôi có thể mắc bệnh gì?",
+        "answer": "Viêm gan C mãn tính",
+        "context": [
+            "Aminotransferase tăng nhẹ",
+            "Mệt mỏi",
+            "Cryoglobulin huyết",
+            "Rối loạn chuyển hóa porphyria",
+            "Viêm cầu thận",
+            "Viêm tuyến nước bọt lympho"
+        ]
+    },
+    {
+        "question": "Bác sĩ, gần đây xét nghiệm máu hơi lạ, người hay mệt, da dẻ khô và thận hình như không ổn. Có bệnh gì không?",
+        "answer": "Viêm gan C mãn tính",
+        "context": [
+            "Aminotransferase tăng nhẹ",
+            "Mệt mỏi",
+            "Cryoglobulin huyết",
+            "Rối loạn chuyển hóa porphyria",
+            "Viêm cầu thận",
+            "Viêm tuyến nước bọt lympho"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, tôi bị vàng da tiến triển, phát ban, khô mắt và viêm tuyến giáp. Có thể là bệnh gì?",
+        "answer": "Viêm gan tự miễn",
+        "context": [
+            "Vàng da tiến triển",
+            "Phát ban",
+            "Khô mắt",
+            "Viêm tuyến giáp",
+            "Thiếu máu tan huyết",
+            "Viêm thận",
+            "Mệt mỏi và chán ăn kéo dài"
+        ]
+    },
+    {
+        "question": "Thưa bác sĩ, da tôi vàng hoe, ăn chẳng thấy ngon, bụng to lên, đau quặn, mũi hay chảy máu, nóng sốt và yếu người. Bệnh gì vậy?",
+        "answer": "Viêm gan tự miễn",
+        "context": [
+            "Vàng da tiến triển",
+            "Phát ban",
+            "Khô mắt",
+            "Viêm tuyến giáp",
+            "Thiếu máu tan huyết",
+            "Viêm thận",
+            "Mệt mỏi và chán ăn kéo dài"
+        ]
+    },
+    {
+        "question": "Bác sĩ, tôi bị chán ăn, buồn nôn, nôn, tiêu chảy, đau âm ỉ hạ sườn phải, mệt mỏi, suy nhược và vàng da. Tôi có thể mắc bệnh gì?",
+        "answer": "Xơ gan",
+        "context": [
+            "Chán ăn",
+            "Buồn nôn, nôn",
+            "Tiêu chảy",
+            "Đau âm ỉ hạ sườn phải",
+            "Mệt mỏi, suy nhược",
+            "Vàng da"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, dạo này ăn không vô, hay buồn ói, đi ngoài lỏng, vùng bụng phải đau âm ỉ, người yếu đuối và da vàng vọt. Có bệnh gì không?",
+        "answer": "Xơ gan",
+        "context": [
+            "Chán ăn",
+            "Buồn nôn, nôn",
+            "Tiêu chảy",
+            "Đau âm ỉ hạ sườn phải",
+            "Mệt mỏi, suy nhược",
+            "Vàng da"
+        ]
+    },
+    {
+        "question": "Thưa bác sĩ, tôi có chán ăn, buồn nôn, nôn, sốt, vàng da và gan to ấn đau. Có thể là bệnh gì?",
+        "answer": "Bệnh gan do rượu",
+        "context": [
+            "Chán ăn",
+            "Buồn nôn, nôn",
+            "Sốt",
+            "Vàng da",
+            "Gan to ấn đau"
+        ]
+    },
+    {
+        "question": "Bác sĩ, gần đây ăn uống kém, hay ói mửa, sốt hâm hấp, da vàng và vùng gan đau khi sờ. Bệnh gì thế?",
+        "answer": "Bệnh gan do rượu",
+        "context": [
+            "Chán ăn",
+            "Buồn nôn, nôn",
+            "Sốt",
+            "Vàng da",
+            "Gan to ấn đau"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, tôi bị ngứa, mệt mỏi, vàng da, u vàng mi mắt, phân mỡ và tăng sắc tố da. Tôi có thể mắc bệnh gì?",
+        "answer": "Xơ gan mật nguyên phát",
+        "context": [
+            "Ngứa",
+            "Mệt mỏi",
+            "Vàng da",
+            "U vàng mi mắt (xanthelasma)",
+            "u vàng (xanthomata)",
+            "Phân mỡ",
+            "Tăng sắc tố da",
+            "Gan lách to",
+            "tăng áp lực tính mạch cửa",
+            "tăng phosphatase kiềm máu, bilirubin, cholesterrol và IgM"
+        ]
+    },
+    {
+        "question": "Thưa bác sĩ, da ngứa ngáy, người mệt, da vàng, mí mắt nổi cục, phân nhờn và da sậm màu. Có bệnh gì vậy?",
+        "answer": "Xơ gan mật nguyên phát",
+        "context": [
+            "Ngứa",
+            "Mệt mỏi",
+            "Vàng da",
+            "U vàng mi mắt (xanthelasma)",
+            "u vàng (xanthomata)",
+            "Phân mỡ",
+            "Tăng sắc tố da",
+            "Gan lách to",
+            "tăng áp lực tính mạch cửa",
+            "tăng phosphatase kiềm máu, bilirubin, cholesterrol và IgM"
+        ]
+    },
+    {
+        "question": "Thưa bác sĩ, tôi bị chảy máu đường tiêu hóa, thường xuyên nôn ra máu tươi và đi ngoài phân đen, nội soi cho thấy giãn tĩnh mạch thực quản và dạ dày. Đây có thể là dấu hiệu của bệnh gì?",
+        "answer": "Tăng áp lực tĩnh mạch cửa dẫn đến giãn tĩnh mạch thực quản và dạ dày",
+        "context": [
+            "Chảy máu đường tiêu hóa",
+            "Nôn ra máu tươi",
+            "Phân đen",
+            "Giãn tĩnh mạch thực quản",
+            "Giãn tĩnh mạch dạ dày",
+            "Tăng áp lực tĩnh mạch cửa (gradient áp lực tĩnh mạch gan >5 mmHg)",
+            "Liên quan đến xơ gan (theo phân loại Child-Pugh)"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, tôi hay bị ói ra máu, đi ngoài thấy phân đen sì, bác sĩ bảo mạch máu ở thực quản với dạ dày bị phình to. Vậy tôi bị bệnh gì hả bác sĩ?",
+        "answer": "Tăng áp lực tĩnh mạch cửa dẫn đến giãn tĩnh mạch thực quản và dạ dày",
+        "context": [
+            "Chảy máu đường tiêu hóa",
+            "Nôn ra máu",
+            "Phân đen",
+            "Giãn tĩnh mạch thực quản",
+            "Giãn tĩnh mạch dạ dày",
+            "Tăng áp lực tĩnh mạch cửa (gradient áp lực tĩnh mạch gan >5 mmHg)",
+            "Có thể liên quan đến bệnh gan mạn tính như xơ gan"
+        ]
+    },
+    {
+        "question": "Thưa bác sĩ, tôi bị lú lẫn, nói lắp, thay đổi tính cách, buồn ngủ khó đánh thức và suy tư thế vận động (asterixis - dấu hiệu flapping tremor). Tôi có thể mắc bệnh gì?",
+        "answer": "Bệnh lý não gan",
+        "context": [
+            "Lú lẫn",
+            "Nói lắp",
+            "Thay đổi tính cách gồm bạo lực và hành vi không phù hợp",
+            "Buồn ngủ và khó đánh thức",
+            "suy tư thế vận động (asterixis - dấu hiệu flapping tremor)"
+        ]
+    },
+    {
+        "question": "Bác sĩ, đầu óc tôi hay mơ hồ, nói năng lắp bắp, tính tình thay đổi, buồn ngủ suốt và tay run run. Có bệnh gì không?",
+        "answer": "Bệnh lý não gan",
+        "context": [
+            "Lú lẫn",
+            "Nói lắp",
+            "Thay đổi tính cách gồm bạo lực và hành vi không phù hợp",
+            "Buồn ngủ và khó đánh thức",
+            "suy tư thế vận động (asterixis - dấu hiệu flapping tremor)"
+        ]
+    },
+    {
+        "question": "Bác sĩ ơi, tôi có cổ trướng, lách to, giãn tĩnh mạch và bệnh não gan. Có thể là bệnh gì?",
+        "answer": "Tăng áp lực tĩnh mạch cửa",
+        "context": [
+            "Cổ trướng",
+            "Lách to",
+            "Giãn tĩnh mạch",
+            "Bệnh não gan",
+            "Tăng hoạt lách"
+        ]
+    },
+    {
+        "question": "Thưa bác sĩ, bụng tôi phình to nước, vùng bụng trái to lên, mạch máu nổi và đầu óc không minh mẫn. Bệnh gì vậy?",
+        "answer": "Tăng áp lực tĩnh mạch cửa",
+        "context": [
+            "Cổ trướng",
+            "Lách to",
+            "Giãn tĩnh mạch",
+            "Bệnh não gan",
+            "Tăng hoạt lách"
+        ]
+    }
+]

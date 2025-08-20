@@ -1,0 +1,18 @@
+[project]
+name = "booking_agent"
+version = "0.1.0"
+description = "Đặt lịch khám, chọn chuyên khoa và bác sĩ phù hợp"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk>=1.0.0",
+    "gradio>=5.30.0",
+    "langchain-google-genai>=2.1.5",
+    "langchain-mcp-adapters>=0.1.0",
+    "langgraph>=0.4.5",
+    "mcp>=1.5.0",
+
+]
+
+[tool.uv.sources]
+
