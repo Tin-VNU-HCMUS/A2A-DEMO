@@ -42,6 +42,8 @@ dependencies = [
     "rank-bm25>=0.2.2",
     "chromadb>=1.0.17",
     "pyvi>=0.1.1",
+    "pymupdf>=1.26.4",
+    "langchain-huggingface>=0.3.1",
 ]
 
 [tool.hatch.build.targets.wheel]

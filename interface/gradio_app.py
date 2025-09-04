@@ -6,8 +6,39 @@ import asyncio
 from agents.symptom_agent.symptom_agent import SymptomAgent
 from tools.symptoms_tool import search_symptoms
 
+# MUST be at very top of entrypoint before importing routing_agent or others
+import logging, sys
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)],
+    force=True,   # buộc ghi đè handlers cũ
+)
+
+# đảm bảo root logger bật DEBUG
+root_logger = logging.getLogger()
+root_logger.setLevel(logging.DEBUG)
+
+# thêm explicit handler cho HostAgent logger (ghi đè nếu cần)
+host_logger = logging.getLogger("HostAgent")
+if not host_logger.handlers:
+    ch = logging.StreamHandler(sys.stdout)
+    ch.setLevel(logging.DEBUG)
+    ch.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(name)s - %(message)s"))
+    host_logger.addHandler(ch)
+host_logger.setLevel(logging.DEBUG)
+
+# optional: also make sure RemoteAgentConnections logger exists
+rac_logger = logging.getLogger("RemoteAgentConnections")
+rac_logger.setLevel(logging.DEBUG)
+
+
+
 # Tạo agent (giả định bạn có danh sách tool từ MCP hoặc định nghĩa thủ công)
-agent = SymptomAgent(mcp_tools=[search_symptoms])
+from host_agent.routing_agent import HostAgent
+
+agent = HostAgent()
 
 # Hàm async lấy phản hồi từ agent (dùng stream hoặc ainvoke)
 async def get_agent_response_async(message: str) -> str:

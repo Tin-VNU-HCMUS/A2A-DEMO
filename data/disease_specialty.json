@@ -1,0 +1,314 @@
+[
+  {
+    "disease": "BỆNH TẾ BÀO MAST HỆ THỐNG",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Bệnh Crohn",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Bệnh ROHN (CD)",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Bệnh dạ dày do tăng áp cửa",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Bệnh gan do rượu",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Bệnh lý não gan",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Bệnh não gan",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Bệnh túi thừa",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Bệnh túi thừa / Viêm túi thừa",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Bội nhiễm viêm gan D",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Cổ trướng do xơ gan",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Cổ trướng do xơ gan mất bù",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Cổ trướng tụy",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Gan nhiễm mỡ do rượu",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Giãn tĩnh mạch thực quản (do tăng áp cửa)",
+    "specialty": "Tim mạch"
+  },
+  {
+    "disease": "Giả tắc ruột",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Hạ natri máu do xơ gan",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Hội chứng Zollinger-Ellison",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Hội chứng Zollinger-Ellison (Z-E)",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Hội chứng gan–phổi",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Hội chứng gan–thận",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Hội chứng ruột kích thích",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Hội chứng ruột kích thích (IBS)",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Loét dạ dày",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Loét dạ dày tá tràng",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Loét tá tràng",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Mề đay và phù mạch",
+    "specialty": "Tim mạch"
+  },
+  {
+    "disease": "Nang giả tụy",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Nhiễm khuẩn phúc mạc tự phát (SBP)",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "PBC có kém hấp thu mỡ",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Rối loạn đông máu do xơ gan",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "SUY GAN CẤP",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Suy gan cấp",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Thiếu máu mạc treo cấp",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Trĩ",
+    "specialty": "Hậu môn – Trực tràng"
+  },
+  {
+    "disease": "Tăng hoạt lách (do tăng áp cửa)",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Tăng áp lực tĩnh mạch cửa",
+    "specialty": "Tim mạch"
+  },
+  {
+    "disease": "Tăng áp lực tĩnh mạch cửa dẫn đến giãn tĩnh mạch thực quản và dạ dày",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Tăng áp phổi do tăng áp cửa",
+    "specialty": "Hô hấp"
+  },
+  {
+    "disease": "Tắc mật trong gan",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Ung thư đầu tụy",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "VIÊM GAN DO THUỐC VÀ NHIỄM ĐỘC",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm dạ dày mãn tính",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan A cấp",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan B mãn tính",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan C cấp",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan C mãn tính",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan E cấp",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan E cấp ở phụ nữ mang thai",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan do rượu",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan do rượu nặng",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan do thuốc",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan mãn tính",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan tự miễn",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm gan vi rút cấp",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm loét đại tràng",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm túi mật cấp",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Viêm túi mật mạn",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Viêm tụy cấp",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm tụy cấp do sỏi mật",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm tụy cấp nặng",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm tụy hoại tử",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm tụy mạn",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Viêm xơ đường mật nguyên phát",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Viêm đường mật cấp",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Viêm đường mật mạn",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Viêm đường mật nặng",
+    "specialty": "Nội tổng quát"
+  },
+  {
+    "disease": "Viêm đại tràng thiếu máu cục bộ",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "XƠ GAN MẬT NGUYÊN PHÁT (PBC)",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Xơ gan",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Xơ gan (giai đoạn còn bù)",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Xơ gan do rượu",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Xơ gan do rượu với tăng áp lực cửa",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Xơ gan mạn",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Xơ gan mất bù",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Xơ gan mật nguyên phát",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Xơ gan mật nguyên phát (PBC)",
+    "specialty": "Tiêu hóa – Gan mật"
+  },
+  {
+    "disease": "Ứ mật trong gan",
+    "specialty": "Tiêu hóa – Gan mật"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "specialty": "Hô hấp",
+    "packages": [
+      {
+        "id": "P001",
+        "name": "Gói khám Hô hấp cơ bản",
+        "description": "Khám lâm sàng và xét nghiệm cơ bản"
+      },
+      {
+        "id": "P002",
+        "name": "Gói khám Hô hấp nâng cao",
+        "description": "Khám + siêu âm, xét nghiệm chuyên sâu, tầm soát"
+      }
+    ]
+  },
+  {
+    "specialty": "Hậu môn – Trực tràng",
+    "packages": [
+      {
+        "id": "P003",
+        "name": "Gói khám Hậu môn – Trực tràng cơ bản",
+        "description": "Khám lâm sàng và xét nghiệm cơ bản"
+      },
+      {
+        "id": "P004",
+        "name": "Gói khám Hậu môn – Trực tràng nâng cao",
+        "description": "Khám + siêu âm, xét nghiệm chuyên sâu, tầm soát"
+      }
+    ]
+  },
+  {
+    "specialty": "Nội tổng quát",
+    "packages": [
+      {
+        "id": "P005",
+        "name": "Gói khám Nội tổng quát cơ bản",
+        "description": "Khám lâm sàng và xét nghiệm cơ bản"
+      },
+      {
+        "id": "P006",
+        "name": "Gói khám Nội tổng quát nâng cao",
+        "description": "Khám + siêu âm, xét nghiệm chuyên sâu, tầm soát"
+      }
+    ]
+  },
+  {
+    "specialty": "Tim mạch",
+    "packages": [
+      {
+        "id": "P007",
+        "name": "Gói khám Tim mạch cơ bản",
+        "description": "Khám lâm sàng và xét nghiệm cơ bản"
+      },
+      {
+        "id": "P008",
+        "name": "Gói khám Tim mạch nâng cao",
+        "description": "Khám + siêu âm, xét nghiệm chuyên sâu, tầm soát"
+      }
+    ]
+  },
+  {
+    "specialty": "Tiêu hóa – Gan mật",
+    "packages": [
+      {
+        "id": "P009",
+        "name": "Gói khám Tiêu hóa – Gan mật cơ bản",
+        "description": "Khám lâm sàng và xét nghiệm cơ bản"
+      },
+      {
+        "id": "P010",
+        "name": "Gói khám Tiêu hóa – Gan mật nâng cao",
+        "description": "Khám + siêu âm, xét nghiệm chuyên sâu, tầm soát"
+      }
+    ]
+  }
+]

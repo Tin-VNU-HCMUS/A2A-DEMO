@@ -1,0 +1,62 @@
+[
+  {
+    "id": "P001",
+    "min": 300000,
+    "max": 600000,
+    "currency": "VND"
+  },
+  {
+    "id": "P002",
+    "min": 800000,
+    "max": 2000000,
+    "currency": "VND"
+  },
+  {
+    "id": "P003",
+    "min": 300000,
+    "max": 600000,
+    "currency": "VND"
+  },
+  {
+    "id": "P004",
+    "min": 800000,
+    "max": 2000000,
+    "currency": "VND"
+  },
+  {
+    "id": "P005",
+    "min": 300000,
+    "max": 600000,
+    "currency": "VND"
+  },
+  {
+    "id": "P006",
+    "min": 800000,
+    "max": 2000000,
+    "currency": "VND"
+  },
+  {
+    "id": "P007",
+    "min": 300000,
+    "max": 600000,
+    "currency": "VND"
+  },
+  {
+    "id": "P008",
+    "min": 800000,
+    "max": 2000000,
+    "currency": "VND"
+  },
+  {
+    "id": "P009",
+    "min": 300000,
+    "max": 600000,
+    "currency": "VND"
+  },
+  {
+    "id": "P010",
+    "min": 800000,
+    "max": 2000000,
+    "currency": "VND"
+  }
+]

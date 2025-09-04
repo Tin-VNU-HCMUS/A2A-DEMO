@@ -16,6 +16,11 @@ from a2a.types import (
     TaskStatusUpdateEvent,
 )
 
+import logging
+logger = logging.getLogger("RemoteAgentConnections")
+logger.setLevel(logging.DEBUG)
+
+
 
 TaskCallbackArg = Task | TaskStatusUpdateEvent | TaskArtifactUpdateEvent
 TaskUpdateCallback = Callable[[TaskCallbackArg, AgentCard], Task]
