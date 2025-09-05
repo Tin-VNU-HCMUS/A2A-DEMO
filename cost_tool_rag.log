@@ -1,0 +1,453 @@
+2025-09-05 05:32:59,534 - INFO - Use pytorch device_name: cpu
+2025-09-05 05:32:59,534 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 05:32:59,534 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 05:33:00,318 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 05:33:00,383 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 05:33:00,671 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 05:33:00,833 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 05:33:01,343 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 05:33:01,392 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 05:33:01,728 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 05:33:01,791 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 05:33:02,100 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 05:33:02,160 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 05:33:02,461 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 05:33:02,526 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 05:33:02,881 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 05:33:03,186 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 05:33:03,264 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 05:33:03,745 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 05:33:03,822 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 05:33:04,141 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 05:33:05,335 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 05:33:05,567 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 05:33:05,893 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6115
+2025-09-05 05:33:05,908 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 05:33:05,908 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 05:33:05,908 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 06:04:23,630 - INFO - Use pytorch device_name: cpu
+2025-09-05 06:04:23,630 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 06:04:23,630 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 06:04:24,512 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 06:04:24,576 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 06:04:25,877 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 06:04:25,920 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 06:04:26,467 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 06:04:26,532 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 06:04:27,058 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 06:04:27,185 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 06:04:27,537 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 06:04:27,621 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 06:04:27,921 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 06:04:27,987 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 06:04:28,352 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 06:04:28,815 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 06:04:28,879 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 06:04:29,421 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 06:04:29,491 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 06:04:30,010 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 06:04:31,040 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 06:04:31,120 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 06:04:31,424 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6115
+2025-09-05 06:04:31,439 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 06:04:31,439 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 06:04:31,439 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 18:56:28,096 - INFO - Use pytorch device_name: cpu
+2025-09-05 18:56:28,096 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 18:56:28,096 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 18:56:28,904 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 18:56:29,054 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 18:56:29,356 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 18:56:29,423 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 18:56:30,386 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 18:56:30,457 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 18:56:30,821 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 18:56:30,878 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 18:56:31,283 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 18:56:31,359 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 18:56:31,724 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 18:56:31,928 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 18:56:32,241 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 18:56:33,008 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 18:56:33,068 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 18:56:33,523 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 18:56:33,582 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 18:56:33,883 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 18:56:35,000 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 18:56:35,065 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 18:56:35,428 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 18:56:35,428 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 18:56:35,428 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 18:56:35,428 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 18:59:11,455 - INFO - Use pytorch device_name: cpu
+2025-09-05 18:59:11,455 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 18:59:11,458 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 18:59:12,092 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 18:59:12,168 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 18:59:12,568 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 18:59:12,626 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 18:59:12,935 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 18:59:12,990 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 18:59:13,363 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 18:59:13,455 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 18:59:13,769 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 18:59:13,846 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 18:59:14,164 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 18:59:14,225 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 18:59:14,704 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 18:59:15,154 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 18:59:15,215 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 18:59:15,611 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 18:59:15,676 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 18:59:15,968 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 18:59:17,040 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 18:59:17,116 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 18:59:17,428 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 18:59:17,440 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 18:59:17,440 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 18:59:17,440 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 19:03:06,783 - INFO - Use pytorch device_name: cpu
+2025-09-05 19:03:06,783 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 19:03:06,783 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 19:03:07,724 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 19:03:07,858 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 19:03:08,203 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 19:03:08,268 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 19:03:08,585 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 19:03:08,748 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 19:03:09,634 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 19:03:09,727 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 19:03:10,250 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 19:03:10,314 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 19:03:10,642 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 19:03:10,707 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 19:03:11,080 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 19:03:11,477 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 19:03:11,550 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 19:03:12,003 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 19:03:12,065 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 19:03:12,408 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 19:03:13,531 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 19:03:13,674 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 19:03:14,127 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 19:03:14,135 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 19:03:14,135 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 19:03:14,135 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 19:05:56,774 - INFO - Use pytorch device_name: cpu
+2025-09-05 19:05:56,775 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 19:05:56,777 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 19:05:57,947 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 19:05:58,019 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 19:05:58,774 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 19:05:58,975 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 19:05:59,274 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 19:05:59,361 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 19:05:59,678 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 19:05:59,935 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 19:06:00,310 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 19:06:00,408 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 19:06:01,260 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 19:06:01,355 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 19:06:01,745 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 19:06:02,168 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 19:06:02,239 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 19:06:02,692 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 19:06:02,906 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 19:06:03,332 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 19:06:04,568 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 19:06:04,636 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 19:06:04,940 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 19:06:04,954 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 19:06:04,954 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 19:06:04,956 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 21:38:00,971 - INFO - Use pytorch device_name: cpu
+2025-09-05 21:38:00,971 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 21:38:00,971 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 21:38:01,882 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 21:38:01,964 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 21:38:02,275 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 21:38:02,338 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 21:38:02,680 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 21:38:02,744 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 21:38:03,071 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 21:38:03,134 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 21:38:03,539 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 21:38:03,606 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 21:38:03,973 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 21:38:04,036 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 21:38:04,429 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 21:38:04,905 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 21:38:04,979 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 21:38:05,375 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 21:38:05,472 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 21:38:05,794 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 21:38:06,817 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 21:38:06,883 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 21:38:07,236 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 21:38:07,242 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 21:38:07,244 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 21:38:07,244 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 21:45:10,078 - INFO - Use pytorch device_name: cpu
+2025-09-05 21:45:10,078 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 21:45:10,078 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 21:45:10,838 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 21:45:10,952 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 21:45:11,261 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 21:45:11,326 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 21:45:11,667 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 21:45:11,765 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 21:45:12,110 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 21:45:12,176 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 21:45:12,488 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 21:45:12,601 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 21:45:12,913 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 21:45:13,103 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 21:45:13,471 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 21:45:13,765 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 21:45:13,844 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 21:45:14,241 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 21:45:14,304 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 21:45:14,656 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 21:45:15,627 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 21:45:15,695 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 21:45:16,002 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 21:45:16,002 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 21:45:16,002 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 21:45:16,018 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 22:18:10,031 - INFO - Use pytorch device_name: cpu
+2025-09-05 22:18:10,031 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:18:10,038 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 22:18:10,745 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:18:10,891 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:18:11,279 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:18:11,408 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:18:11,715 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:18:11,881 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:18:12,311 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 22:18:12,390 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 22:18:12,680 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:18:12,744 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:18:13,548 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 22:18:13,612 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 22:18:13,952 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 22:18:14,270 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 22:18:14,333 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 22:18:14,756 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 22:18:14,846 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 22:18:15,155 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 22:18:16,218 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 22:18:16,348 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 22:18:16,771 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 22:18:16,784 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:18:16,784 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 22:18:16,784 - DEBUG - Đang đọc file specialty_package.json
+2025-09-05 22:18:16,788 - DEBUG - Đang đọc file package_cost.json
+2025-09-05 22:18:16,788 - DEBUG - Hợp nhất các biến thể bệnh
+2025-09-05 22:18:16,788 - DEBUG - Đã tạo index: 65 bệnh, 5 chuyên khoa, 10 gói
+2025-09-05 22:18:16,788 - DEBUG - Khởi tạo Gemini client với model gemini-1.5-pro
+2025-09-05 22:18:16,788 - INFO - Use pytorch device_name: cpu
+2025-09-05 22:18:16,788 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:18:17,151 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:18:17,231 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:18:17,651 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:18:17,716 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:18:18,069 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:18:18,131 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:18:18,464 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 22:18:18,531 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 22:18:18,844 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:18:18,908 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:18:19,210 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 22:18:19,275 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 22:18:19,594 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 22:18:19,908 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 22:18:20,091 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 22:18:20,480 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 22:18:20,559 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 22:18:20,998 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 22:18:22,053 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 22:18:22,290 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 22:18:22,690 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 22:18:22,700 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:18:22,700 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 22:18:22,700 - ERROR - Không tìm thấy file dữ liệu: [Errno 2] No such file or directory: '\\mnt\\data\\disease_specialty.json'
+2025-09-05 22:32:44,856 - INFO - Use pytorch device_name: cpu
+2025-09-05 22:32:44,856 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:32:44,856 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 22:32:46,125 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:32:46,288 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:32:46,613 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:32:46,675 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:32:47,049 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:32:47,114 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:32:47,455 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 22:32:47,537 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 22:32:47,881 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:32:47,941 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:32:48,381 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 22:32:48,447 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 22:32:48,884 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 22:32:49,274 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 22:32:49,326 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 22:32:49,758 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 22:32:49,807 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 22:32:50,116 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 22:32:51,073 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 22:32:51,171 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 22:32:51,478 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 22:32:51,478 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:32:51,478 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 22:32:51,478 - DEBUG - Đang đọc file specialty_package.json
+2025-09-05 22:32:51,478 - DEBUG - Đang đọc file package_cost.json
+2025-09-05 22:32:51,478 - DEBUG - Hợp nhất các biến thể bệnh
+2025-09-05 22:32:51,478 - DEBUG - Đã tạo index: 65 bệnh, 5 chuyên khoa, 10 gói
+2025-09-05 22:37:27,756 - INFO - Use pytorch device_name: cpu
+2025-09-05 22:37:27,756 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:37:27,756 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 22:37:28,350 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:37:28,415 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:37:28,722 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:37:28,773 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:37:29,128 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:37:29,352 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:37:29,656 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 22:37:29,721 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 22:37:30,025 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:37:30,089 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:37:30,461 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 22:37:30,526 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 22:37:30,834 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 22:37:31,240 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 22:37:31,318 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 22:37:31,766 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 22:37:31,845 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 22:37:32,202 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 22:37:33,320 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 22:37:33,388 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 22:37:33,725 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 22:37:33,741 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:37:33,741 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 22:37:33,741 - DEBUG - Đang đọc file specialty_package.json
+2025-09-05 22:37:33,741 - DEBUG - Đang đọc file package_cost.json
+2025-09-05 22:37:33,741 - DEBUG - Hợp nhất các biến thể bệnh
+2025-09-05 22:37:33,741 - DEBUG - Đã tạo index: 65 bệnh, 5 chuyên khoa, 10 gói
+2025-09-05 22:42:27,822 - INFO - Use pytorch device_name: cpu
+2025-09-05 22:42:27,822 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:42:27,822 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 22:42:28,528 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:42:28,657 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:42:28,965 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:42:29,062 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:42:29,402 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:42:29,450 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:42:29,806 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 22:42:29,870 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 22:42:30,290 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:42:30,358 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:42:30,791 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 22:42:30,858 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 22:42:31,359 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 22:42:31,669 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 22:42:31,740 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 22:42:32,205 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 22:42:32,282 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 22:42:32,592 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 22:42:33,651 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 22:42:33,711 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 22:42:34,199 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 22:42:34,199 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:42:34,199 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 22:42:34,199 - DEBUG - Đang đọc file specialty_package.json
+2025-09-05 22:42:34,199 - DEBUG - Đang đọc file package_cost.json
+2025-09-05 22:42:34,199 - DEBUG - Hợp nhất các biến thể bệnh
+2025-09-05 22:42:34,199 - DEBUG - Đã tạo index: 65 bệnh, 5 chuyên khoa, 10 gói
+2025-09-05 22:43:58,566 - INFO - Use pytorch device_name: cpu
+2025-09-05 22:43:58,566 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:43:58,566 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 22:43:59,408 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:43:59,473 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:43:59,796 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:43:59,860 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:44:00,218 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:44:00,282 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:44:00,598 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 22:44:00,702 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 22:44:01,013 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:44:01,067 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:44:01,805 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 22:44:01,887 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 22:44:02,291 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 22:44:02,615 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 22:44:02,667 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 22:44:03,106 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 22:44:03,179 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 22:44:03,503 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 22:44:04,702 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 22:44:05,013 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 22:44:05,317 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 22:44:05,333 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:44:05,333 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 22:44:05,333 - DEBUG - Đang đọc file specialty_package.json
+2025-09-05 22:44:05,333 - DEBUG - Đang đọc file package_cost.json
+2025-09-05 22:44:05,333 - DEBUG - Hợp nhất các biến thể bệnh
+2025-09-05 22:44:05,333 - DEBUG - Đã tạo index: 65 bệnh, 5 chuyên khoa, 10 gói
+2025-09-05 22:49:27,758 - INFO - Use pytorch device_name: cpu
+2025-09-05 22:49:27,758 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:49:27,761 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-05 22:49:28,543 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:49:28,618 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:49:29,050 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:49:29,359 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:49:29,809 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-05 22:49:29,864 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-05 22:49:30,325 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-05 22:49:30,693 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-05 22:49:31,079 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-05 22:49:31,141 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-05 22:49:31,461 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-05 22:49:31,522 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-05 22:49:31,882 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-05 22:49:32,209 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-05 22:49:32,269 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-05 22:49:32,695 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-05 22:49:32,765 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-05 22:49:33,134 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-05 22:49:34,259 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-05 22:49:34,323 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-05 22:49:34,779 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-05 22:49:34,784 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-05 22:49:34,785 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-05 22:49:34,786 - DEBUG - Đang đọc file specialty_package.json
+2025-09-05 22:49:34,786 - DEBUG - Đang đọc file package_cost.json
+2025-09-05 22:49:34,786 - DEBUG - Hợp nhất các biến thể bệnh
+2025-09-05 22:49:34,788 - DEBUG - Đã tạo index: 65 bệnh, 5 chuyên khoa, 10 gói
+2025-09-06 05:29:10,059 - INFO - Use pytorch device_name: cpu
+2025-09-06 05:29:10,059 - INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-06 05:29:10,059 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-06 05:29:11,069 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-06 05:29:11,165 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-06 05:29:11,472 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-06 05:29:11,547 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-06 05:29:11,900 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-06 05:29:11,964 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-06 05:29:12,350 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-06 05:29:12,413 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md HTTP/1.1" 200 0
+2025-09-06 05:29:12,765 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-06 05:29:12,830 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json HTTP/1.1" 200 0
+2025-09-06 05:29:13,168 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-06 05:29:13,217 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-06 05:29:13,544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-06 05:29:14,024 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-06 05:29:14,106 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json HTTP/1.1" 200 0
+2025-09-06 05:29:15,059 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-06 05:29:15,124 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-06 05:29:15,665 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-06 05:29:16,774 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-06 05:29:17,016 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-06 05:29:17,470 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 HTTP/1.1" 200 6134
+2025-09-06 05:29:17,470 - DEBUG - Đã load model embedding: paraphrase-multilingual-MiniLM-L12-v2
+2025-09-06 05:29:17,470 - DEBUG - Đang đọc file disease_specialty.json
+2025-09-06 05:29:17,470 - DEBUG - Đang đọc file specialty_package.json
+2025-09-06 05:29:17,470 - DEBUG - Đang đọc file package_cost.json
+2025-09-06 05:29:17,484 - DEBUG - Hợp nhất các biến thể bệnh
+2025-09-06 05:29:17,484 - DEBUG - Đã tạo index: 65 bệnh, 5 chuyên khoa, 10 gói

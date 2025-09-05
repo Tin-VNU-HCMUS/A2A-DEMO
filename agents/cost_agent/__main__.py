@@ -35,7 +35,7 @@ SERVER_CONFIGS = {
 app_context: dict[str, Any] = {}
 
 DEFAULT_HOST = 'localhost'
-DEFAULT_PORT = 10003  # Thay đổi port để tránh xung đột với SymptomAgent
+DEFAULT_PORT = 10002  # Thay đổi port để tránh xung đột với SymptomAgent
 DEFAULT_LOG_LEVEL = 'info'
 
 # =====================
@@ -155,5 +155,6 @@ def main(
 # =====================
 # 5. Entry point
 # =====================
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=10002)

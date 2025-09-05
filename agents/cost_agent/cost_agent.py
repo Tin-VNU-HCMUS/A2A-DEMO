@@ -1,5 +1,15 @@
+
 import os
 from dotenv import load_dotenv
+
+# Load .env trước khi đọc biến môi trường
+load_dotenv(override=True)
+
+# Debug API key
+print("API key: %s", os.getenv("GOOGLE_API_KEY"))
+print("Use Vertex: %s", os.getenv("GOOGLE_GENAI_USE_VERTEXAI"))
+
+
 import logging
 from langchain_core.runnables.config import RunnableConfig
 from langchain_core.messages import AIMessage, AIMessageChunk
@@ -11,13 +21,6 @@ from typing import Literal, Any, AsyncIterable
 from tools.cost_tool import cost_tool_rag
 
 
-
-# Load .env trước khi đọc biến môi trường
-load_dotenv(override=True)
-
-# Debug API key
-print("API key: %s", os.getenv("GOOGLE_API_KEY"))
-print("Use Vertex: %s", os.getenv("GOOGLE_GENAI_USE_VERTEXAI"))
 
 
 # Khởi tạo memory để lưu state của agent

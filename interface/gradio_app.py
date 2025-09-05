@@ -35,10 +35,23 @@ rac_logger.setLevel(logging.DEBUG)
 
 
 
-# Tạo agent (giả định bạn có danh sách tool từ MCP hoặc định nghĩa thủ công)
-from host_agent.routing_agent import HostAgent
+# import HostAgent và helper
+from host_agent.routing_agent import get_initialized_routing_agent_sync
 
-agent = HostAgent()
+# Danh sách địa chỉ remote agents (ví dụ)
+remote_agent_addresses = [
+    "http://localhost:10001",  # SymptomAgent
+    "http://localhost:10002",  # CostAgent
+    # "http://localhost:8003",  # BookingAgent (nếu có)
+]
+
+# Thay vì gọi trực tiếp HostAgent()
+# agent = HostAgent(remote_agent_addresses=remote_agent_addresses, http_client=http_client)
+
+# Gọi helper để tạo agent đồng bộ
+agent = get_initialized_routing_agent_sync(remote_agent_addresses)
+
+
 
 # Hàm async lấy phản hồi từ agent (dùng stream hoặc ainvoke)
 async def get_agent_response_async(message: str) -> str:
