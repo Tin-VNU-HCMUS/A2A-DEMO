@@ -44,6 +44,8 @@ dependencies = [
     "pyvi>=0.1.1",
     "pymupdf>=1.26.4",
     "langchain-huggingface>=0.3.1",
+    "typing>=3.10.0.0",
+    "langchain-nvidia-ai-endpoints>=0.3.18",
 ]
 
 [tool.hatch.build.targets.wheel]

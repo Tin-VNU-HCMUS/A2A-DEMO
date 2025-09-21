@@ -41,6 +41,7 @@ from sklearn.mixture import GaussianMixture
 from itertools import groupby
 import regex
 from langchain_huggingface import HuggingFaceEmbeddings
+#from langchain_nvidia_ai_endpoints import ChatNVIDIA
 
 logging.basicConfig(level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)

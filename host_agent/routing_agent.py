@@ -1,21 +1,30 @@
+# Fixed routing_agent: explicit intent classification + task_id handling
+# Created to replace original routing_agent.py to ensure:
+# - Symptom-only queries go only to Symptom Agent
+# - Cost-only queries go only to Cost Agent
+# - Combined queries call Symptom Agent first, then Cost Agent
+# - Do NOT forward a task_id that belongs to another agent (this caused "Task ... was specified but does not exist")
+
+# NOTE: paste this file back as host_agent/routing_agent.py (or replace original) and restart your services.
+
+# Bản sửa lúc 2025-09-19
 import asyncio
 import base64
 import json
 import uuid
 from typing import Any, Dict, List
-
+from types import SimpleNamespace
 
 import logging
+import sys
 logger = logging.getLogger("HostAgent")
 logger.setLevel(logging.DEBUG)
 # add handler if none
 if not logger.handlers:
-    import sys
     ch = logging.StreamHandler(sys.stdout)
     ch.setLevel(logging.DEBUG)
     ch.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(name)s - %(message)s"))
     logger.addHandler(ch)
-
 
 import httpx
 
@@ -36,17 +45,47 @@ from google.adk.agents.callback_context import CallbackContext
 from google.adk.agents.readonly_context import ReadonlyContext
 from google.adk.tools.tool_context import ToolContext
 from google.genai import types
-
+from google.adk.sessions.session import Session
+from google.adk.agents.callback_context import CallbackContext
+from google.adk.agents.invocation_context import InvocationContext, new_invocation_context_id
+from google.adk.sessions.base_session_service import BaseSessionService
+from google.adk.agents.base_agent import BaseAgent
 from .remote_agent_connection import RemoteAgentConnections, TaskUpdateCallback
 
+# --- Minimal Dummy session/agent utilities (unchanged) ---
+class DummySessionService(BaseSessionService):
+    def __init__(self, session: Session):
+        self._session = session
 
+    async def save_session(self, session: Session) -> None:
+        self._session = session
+
+    async def load_session(self, session_id: str) -> Session:
+        return self._session
+
+    async def create_session(self, session: Session) -> None:
+        self._session = session
+
+    async def delete_session(self, session_id: str) -> None:
+        self._session = None
+
+    async def get_session(self, session_id: str) -> Session:
+        return self._session
+
+    async def list_sessions(self) -> list[Session]:
+        return [self._session] if self._session else []
+
+class DummyAgent(BaseAgent):
+    def __init__(self):
+        super().__init__(name="dummy")
+
+# --- HostAgent ---
 class HostAgent:
     """The host agent.
 
-    This agent orchestrates a 3-step care flow:
-      1) send symptom text to SymptomAgent -> get differential diagnosis + tests
-      2) send summary to CostAgent -> get packages & prices
-      3) optionally send booking request to BookingAgent
+    Responsibilities:
+      - route user input to the correct remote agent(s) based on a simple intent classifier
+      - avoid passing task ids across agents (a major cause of the "task not found" error)
     """
 
     def __init__(
@@ -55,14 +94,58 @@ class HostAgent:
         http_client: httpx.AsyncClient,
         task_callback: TaskUpdateCallback | None = None,
     ):
-        self.task_callback = task_callback
+        # remote state
         self.httpx_client = http_client
         self.remote_agent_connections: dict[str, RemoteAgentConnections] = {}
         self.cards: dict[str, AgentCard] = {}
         self.agents: str = ''
+
+        # container to accumulate streaming tasks
+        self._tasks: dict[str, SimpleNamespace] = {}
+
+        # callback default
+        if task_callback is None:
+            self.task_callback = self._default_task_callback
+        else:
+            self.task_callback = task_callback
+
         loop = asyncio.get_running_loop()
-        # Start background init (it's still possible to wait synchronously later).
+        # Start background init
         loop.create_task(self.init_remote_agent_addresses(remote_agent_addresses))
+
+        # Intent keyword sets (can be tuned)
+        self._symptom_keywords = [
+            "triệu chứng",
+            "triệu chứng này",
+            "bị",
+            "nôn",
+            "đau",
+            "ho",
+            "sốt",
+            "chảy máu",
+            "phân đen",
+            "nôn ra máu",
+            "nội soi",
+            "giãn tĩnh mạch",
+            "bệnh gì",
+        ]
+        self._cost_keywords = [
+            "chi phí",
+            "giá",
+            "gói khám",
+            "bao nhiêu",
+            "tốn",
+            "chi phí khám",
+            "giá tiền",
+        ]
+        self._booking_keywords = [
+            "đặt lịch",
+            "hẹn khám",
+            "booking",
+            "đặt khám",
+            "muốn đặt",
+            "muốn hẹn",
+        ]
 
     async def init_remote_agent_addresses(
         self, remote_agent_addresses: list[str]
@@ -70,7 +153,6 @@ class HostAgent:
         async with asyncio.TaskGroup() as task_group:
             for address in remote_agent_addresses:
                 task_group.create_task(self.retrieve_card(address))
-        # Once completed, self.agents is populated by register_agent_card.
 
     async def retrieve_card(self, address: str):
         card_resolver = A2ACardResolver(self.httpx_client, address)
@@ -104,7 +186,6 @@ class HostAgent:
         )
 
     def root_instruction(self, context: ReadonlyContext) -> str:
-        """Clear instruction so model will prefer orchestration tool for combined requests."""
         current_agent = self.check_state(context)
         return f"""
 Bạn là điều phối viên. KHÔNG trả lời trực tiếp khi có thể sử dụng tools.
@@ -143,7 +224,6 @@ Current agent: {current_agent['active_agent']}
             state['session_active'] = True
 
     def list_remote_agents(self):
-        """List the available remote agents you can use to delegate the task."""
         if not self.remote_agent_connections:
             return []
 
@@ -159,9 +239,8 @@ Current agent: {current_agent['active_agent']}
     ):
         """Sends a message to a remote agent and returns a normalized response.
 
-        Returns:
-          - If remote agent returns a Message or Parts -> returns list of strings / dicts
-          - If it returns a Task (async), waits for final status and extracts parts/artifacts.
+        Important fix: DO NOT reuse a task_id that belongs to another agent. We compute
+        the outgoing_task_id based on the *previous* agent recorded in the session state.
         """
         logger.info(f"[HostAgent.send_message] Sending to agent: {agent_name}")
         logger.debug(f"[HostAgent.send_message] message preview: {message[:400]}")
@@ -171,78 +250,102 @@ Current agent: {current_agent['active_agent']}
             raise ValueError(f'Agent {agent_name} not found')
 
         state = tool_context.state
+
+        # IMPORTANT: compute previous agent BEFORE we overwrite it below.
+        previous_agent = state.get('agent')
+        # Only forward the stored task_id if it belongs to the same agent we are about to call.
+        outgoing_task_id = state.get('task_id') if previous_agent == agent_name else None
+
+        # Now set the active agent in state (this records the intent to talk to this remote)
         state['agent'] = agent_name
+
         client = self.remote_agent_connections[agent_name]
         if not client:
             logger.error(f"[HostAgent.send_message] Client not available for {agent_name}")
             raise ValueError(f'Client not available for {agent_name}')
 
-        taskId = state.get('task_id', None)
+        # Keep context id (session-global) if present
         contextId = state.get('context_id', None)
+
         messageId = state.get('message_id', None)
         if not messageId:
             messageId = str(uuid.uuid4())
 
+        # Build MessageSendParams: pass outgoing_task_id (may be None) so we do NOT accidentally
+        # instruct other agents to look up a task_id that doesn't belong to them.
         request: MessageSendParams = MessageSendParams(
-            id=str(uuid.uuid4()),
             message=Message(
                 role='user',
                 parts=[TextPart(text=message)],
                 messageId=messageId,
                 contextId=contextId,
-                taskId=taskId,
+                taskId=outgoing_task_id,
             ),
             configuration=MessageSendConfiguration(
                 acceptedOutputModes=['text', 'text/plain', 'image/png'],
             ),
         )
 
-        logger.info(f"[HostAgent.send_message] Sending request id={request.id} to {agent_name}")
-        logger.debug(f"[HostAgent.send_message] Request preview: {str(request)[:800]}")
+        logger.info(f"[HostAgent.send_message] Sending request messageId={messageId} to {agent_name}")
+        logger.debug(f"[HostAgent.send_message] Request preview: {request}")
 
+        # Send and collect response
         response = await client.send_message(request, self.task_callback)
 
         logger.info(f"[HostAgent.send_message] Received response type: {type(response)} from {agent_name}")
         try:
             logger.debug(f"[HostAgent.send_message] Response (truncated): {str(response)[:2000]}")
         except Exception:
-            # some response objects may not stringify nicely
             logger.debug("[HostAgent.send_message] Response could not be stringified for debug")
 
-        # If remote returns immediate Message -> convert parts and return
+        # If remote returned a final Message
         if isinstance(response, Message):
             converted = await convert_parts(response.parts, tool_context)
             logger.debug(f"[HostAgent.send_message] Converted message parts: {converted}")
             return converted
 
-        # Otherwise response is Task: update session state and collect final outputs
-        task: Task = response
+        if isinstance(response, (list, str, dict)):
+            logger.debug("[HostAgent.send_message] Remote returned immediate list/str/dict - returning as-is")
+            return response
+
+        if response is None:
+            logger.error("[HostAgent.send_message] Received None response from remote agent - did not collect streaming events")
+            raise ValueError("No response from remote agent; ensure HostAgent has a task_callback that accumulates streaming events.")
+
+        if not hasattr(response, "status"):
+            logger.error(f"[HostAgent.send_message] Unexpected response object without 'status': {type(response)}")
+            raise ValueError(f"Unexpected response type from agent {agent_name}: {type(response)}")
+
+        task = response  # type: ignore
+
+        # Update session state safely. Note: task.id belongs to the remote agent we just called.
         state['session_active'] = task.status.state not in [
             TaskState.completed,
             TaskState.canceled,
             TaskState.failed,
             TaskState.unknown,
         ]
-        if task.contextId:
+        if getattr(task, "contextId", None):
             state['context_id'] = task.contextId
-        state['task_id'] = task.id
+        # store the task id returned by the agent we just called
+        state['task_id'] = getattr(task, "id", None)
 
         if task.status.state == TaskState.input_required:
             tool_context.actions.skip_summarization = True
             tool_context.actions.escalate = True
         elif task.status.state == TaskState.canceled:
-            logger.error(f"[HostAgent.send_message] Agent {agent_name} task {task.id} is cancelled")
-            raise ValueError(f'Agent {agent_name} task {task.id} is cancelled')
+            logger.error(f"[HostAgent.send_message] Agent {agent_name} task {getattr(task, 'id', None)} is cancelled")
+            raise ValueError(f'Agent {agent_name} task {getattr(task, 'id', None)} is cancelled')
         elif task.status.state == TaskState.failed:
-            logger.error(f"[HostAgent.send_message] Agent {agent_name} task {task.id} failed")
-            raise ValueError(f'Agent {agent_name} task {task.id} failed')
+            logger.error(f"[HostAgent.send_message] Agent {agent_name} task {getattr(task, 'id', None)} failed")
+            raise ValueError(f'Agent {agent_name} task {getattr(task, 'id', None)} failed')
 
         response_parts: List[Any] = []
-        if task.status.message:
+        if getattr(task.status, "message", None):
             response_parts.extend(
                 await convert_parts(task.status.message.parts, tool_context)
             )
-        if task.artifacts:
+        if getattr(task, "artifacts", None):
             for artifact in task.artifacts:
                 response_parts.extend(
                     await convert_parts(artifact.parts, tool_context)
@@ -250,70 +353,136 @@ Current agent: {current_agent['active_agent']}
         logger.debug(f"[HostAgent.send_message] Final response_parts: {response_parts}")
         return response_parts
 
+    def _default_task_callback(self, event, card: AgentCard):
+        """
+        Accumulate streaming events into a Task-like object.
+        """
+        if isinstance(event, Task) or isinstance(event, Message):
+            return event
 
-    import logging
-    logger = logging.getLogger("HostAgent")
+        # task id extraction (defensive)
+        task_id = None
+        if hasattr(event, "taskId"):
+            task_id = getattr(event, "taskId")
+        elif hasattr(event, "task_id"):
+            task_id = getattr(event, "task_id")
+        elif hasattr(event, "id"):
+            task_id = getattr(event, "id")
+        elif isinstance(event, dict):
+            task_id = event.get("taskId") or event.get("task_id") or event.get("id")
+
+        if not task_id:
+            task_id = str(uuid.uuid4())
+
+        t = self._tasks.get(task_id)
+        if not t:
+            t = SimpleNamespace(
+                id=task_id,
+                contextId=None,
+                artifacts=[],
+                status=SimpleNamespace(state=TaskState.working, message=None),
+            )
+            self._tasks[task_id] = t
+
+        # update contextId
+        if hasattr(event, "contextId"):
+            t.contextId = getattr(event, "contextId")
+        elif isinstance(event, dict) and "contextId" in event:
+            t.contextId = event.get("contextId")
+
+        # update status
+        status = None
+        if hasattr(event, "status"):
+            status = getattr(event, "status")
+        elif isinstance(event, dict) and "status" in event:
+            status = event.get("status")
+
+        if status:
+            if hasattr(status, "state"):
+                t.status.state = getattr(status, "state")
+            elif isinstance(status, dict) and "state" in status:
+                t.status.state = status.get("state", t.status.state)
+
+            message = getattr(status, "message", None) if hasattr(status, "message") else (status.get("message") if isinstance(status, dict) else None)
+            if message:
+                t.status.message = message
+
+        # artifact
+        artifact = None
+        if hasattr(event, "artifact"):
+            artifact = getattr(event, "artifact")
+        elif isinstance(event, dict) and "artifact" in event:
+            artifact = event.get("artifact")
+
+        if artifact:
+            # NOTE: we keep appending; duplication might occur upstream. We can dedupe later.
+            t.artifacts.append(artifact)
+
+        return t
 
     async def orchestrate_care_flow(
-        self, message: str, tool_context: ToolContext
+        self, message: str, tool_context: ToolContext, wants_symptom: bool = True, wants_cost: bool = True, wants_booking: bool = False
     ):
         """
-        Orchestrate the triage & booking flow:
-        1) Send symptom text to SymptomAgent -> get diagnosis + tests
-        2) Summarize and send to CostAgent -> get packages & prices
-        3) If user intent contains booking keywords, call BookingAgent
+        Orchestrate the triage & booking flow with explicit flags.
+
         Returns a dict with keys: symptom, cost, booking (if executed).
         """
         results: Dict[str, Any] = {}
 
-        # Step 1: SymptomAgent
-        if "SymptomAgent" in self.remote_agent_connections:
+        summary_for_cost = ""
+
+        # Step 1: SymptomAgent (only if requested)
+        if wants_symptom and "Symptom Agent" in self.remote_agent_connections:
             try:
-                logger.info("=== Gọi SymptomAgent ===")
-                symptom_resp = await self.send_message(
-                    "SymptomAgent", message, tool_context
-                )
-                logger.info(f"[SymptomAgent] Kết quả: {symptom_resp}")
+                logger.info("=== Gọi Symptom Agent ===")
+                symptom_resp = await self.send_message("Symptom Agent", message, tool_context)
+                logger.info(f"[Symptom Agent] Kết quả: {symptom_resp}")
             except Exception as e:
-                symptom_resp = [f"Error calling SymptomAgent: {e}"]
+                symptom_resp = [f"Error calling Symptom Agent: {e}"]
                 logger.error(symptom_resp)
+        elif wants_symptom:
+            symptom_resp = ["Symptom Agent not available"]
+            logger.warning("Symptom Agent not available")
         else:
-            symptom_resp = ["SymptomAgent not available"]
-            logger.warning("SymptomAgent not available")
+            symptom_resp = ["Not requested"]
+
         results["symptom"] = symptom_resp
 
-        # Build a concise summary for cost agent
-        summary_for_cost = self._summarize_symptom_result(symptom_resp)
+        # Prepare summary if Symptom Agent ran
+        if wants_symptom:
+            summary_for_cost = self._summarize_symptom_result(symptom_resp)
 
-        # Step 2: CostAgent
-        cost_trigger_keywords = ["giá", "chi phí", "bao nhiêu", "gói khám"]
-        wants_cost = any(kw in message.lower() for kw in cost_trigger_keywords)
-
-        if "CostAgent" in self.remote_agent_connections and (summary_for_cost or wants_cost):
+        # Step 2: CostAgent (only if requested)
+        if wants_cost and "Cost Agent" in self.remote_agent_connections:
             try:
                 logger.info("=== Gọi CostAgent ===")
+                # If we have a good summary, use it; else use the raw user message as prompt
                 cost_prompt = (
-                    f"Tóm tắt từ SymptomAgent: {summary_for_cost}\n\n"
+                    f"Tóm tắt từ Symptom Agent: {summary_for_cost}\n\n"
                     f"User hỏi: {message}\n\n"
                     "Hãy đề xuất các gói khám, xét nghiệm, và chi phí tương ứng."
                 )
-                cost_resp = await self.send_message("CostAgent", cost_prompt, tool_context)
-                logger.info(f"[CostAgent] Kết quả: {cost_resp}")
+                cost_resp = await self.send_message("Cost Agent", cost_prompt if summary_for_cost else message, tool_context)
+                logger.info(f"[Cost Agent] Kết quả: {cost_resp}")
             except Exception as e:
-                cost_resp = [f"Error calling CostAgent: {e}"]
+                cost_resp = [f"Error calling Cost Agent: {e}"]
                 logger.error(cost_resp)
+        elif wants_cost:
+            cost_resp = ["Cost Agent not available"]
+            logger.warning("Cost Agent not available")
         else:
-            cost_resp = ["CostAgent not available or no summary"]
-            logger.warning("CostAgent not available or no summary")
+            cost_resp = ["Not requested"]
+
         results["cost"] = cost_resp
 
-        # Step 3: BookingAgent
-        booking_trigger_keywords = [
-            "đặt lịch", "hẹn khám", "booking", "đặt khám", "muốn đặt", "muốn hẹn",
-        ]
-        wants_booking = any(kw in message.lower() for kw in booking_trigger_keywords)
+        # Step 3: BookingAgent (unchanged logic)
+        if wants_booking:
+            wants_booking_flag = any(kw in message.lower() for kw in self._booking_keywords)
+        else:
+            wants_booking_flag = False
 
-        if wants_booking and "BookingAgent" in self.remote_agent_connections:
+        if wants_booking_flag and "BookingAgent" in self.remote_agent_connections:
             try:
                 logger.info("=== Gọi BookingAgent ===")
                 booking_prompt = (
@@ -336,13 +505,11 @@ Current agent: {current_agent['active_agent']}
 
     def _summarize_symptom_result(self, symptom_resp: Any) -> str:
         """Create a compact single-line summary from the symptom agent response."""
-        # symptom_resp may be a list of strings/dicts or a single string.
         if symptom_resp is None:
             return ""
         if isinstance(symptom_resp, str):
             return symptom_resp.strip()
         if isinstance(symptom_resp, list):
-            # join a few items, truncate long outputs
             pieces = []
             for item in symptom_resp:
                 if isinstance(item, dict):
@@ -352,11 +519,79 @@ Current agent: {current_agent['active_agent']}
                 if len(pieces) >= 6:
                     break
             summary = " | ".join(pieces)
-            # truncate to reasonable length
             return summary[:150] + ("..." if len(summary) > 150 else "")
-        # fallback
         return str(symptom_resp)[:150]
 
+    # === Thêm method ainvoke để HostAgent dùng trực tiếp làm agent ===
+    async def ainvoke(self, message: str, session_id: str = None, **kwargs):
+        logger.info(f"[HostAgent.ainvoke] Processing message: {message[:200]}")
+
+        # Tạo session đầy đủ
+        session = Session(
+            id=session_id or "demo-session",
+            app_name="a2a-hospital-agents",
+            user_id="demo-user",
+            state={}
+        )
+
+        session_service = DummySessionService(session)
+
+        invocation_context = InvocationContext(
+            session_service=session_service,
+            invocation_id=new_invocation_context_id(),
+            agent=DummyAgent(),
+            session=session
+        )
+
+        tool_context = ToolContext(invocation_context)
+
+        # --- intent classification (base) ---
+        msg_lower = (message or "").lower()
+        wants_symptom = any(kw in msg_lower for kw in self._symptom_keywords)
+        wants_cost = any(kw in msg_lower for kw in self._cost_keywords)
+        wants_booking = any(kw in msg_lower for kw in self._booking_keywords)
+
+        # --- heuristics to resolve ambiguous queries where both symptom+cost keywords appear ---
+        # If the user's wording clearly requests packages/prices ("gói khám", "cho tôi các gói", "chi phí", "bao nhiêu"),
+        # prefer routing to Cost Agent alone unless the user explicitly asks about symptoms ("triệu chứng", "triệu chứng gì", "dấu hiệu").
+        cost_priority_phrases = [
+            "gói khám", "các gói khám", "chi phí", "giá", "bao nhiêu", "tốn", "chi phí khám",
+            "cho tôi các gói", "cho tôi gói", "xin cho biết", "cho biết", "tư vấn gói", "gợi ý gói",
+        ]
+        symptom_question_phrases = [
+            "triệu chứng gì", "triệu chứng", "dấu hiệu", "bị ", "bị", "nôn", "đau", "sốt", "chảy máu",
+            "phân đen", "nôn ra máu", "nội soi", "bệnh gì",
+        ]
+
+        cost_cue = any(p in msg_lower for p in cost_priority_phrases)
+        symptom_cue = any(p in msg_lower for p in symptom_question_phrases)
+
+        # Resolve precedence:
+        # - If cost cue is present and no explicit symptom question cue -> treat as cost-only.
+        # - If symptom cue is present and no cost cue -> treat as symptom-only.
+        # - Otherwise (both present or neither) keep both flags as-is and orchestrate both (fallback to symptom first).
+        if wants_cost and cost_cue and not symptom_cue:
+            wants_symptom = False
+            wants_cost = True
+        elif wants_symptom and symptom_cue and not cost_cue:
+            wants_cost = False
+
+        logger.debug(f"[HostAgent.ainvoke] intent wants_symptom={wants_symptom}, wants_cost={wants_cost}, wants_booking={wants_booking} (after heuristics cost_cue={cost_cue}, symptom_cue={symptom_cue})")
+
+        # Route according to explicit intent rules required by user:
+        # - symptom-only -> Symptom Agent
+        # - cost-only -> Cost Agent
+        # - both -> Symptom Agent then Cost Agent (use orchestrate_care_flow)
+        if wants_symptom and wants_cost:
+            return await self.orchestrate_care_flow(message, tool_context, wants_symptom=True, wants_cost=True, wants_booking=wants_booking)
+        elif wants_symptom and not wants_cost:
+            return await self.send_message("Symptom Agent", message, tool_context)
+        elif wants_cost and not wants_symptom:
+            return await self.send_message("Cost Agent", message, tool_context)
+        else:
+            # fallback: route to Symptom Agent (more likely to be medical question)
+            logger.debug("[HostAgent.ainvoke] fallback: routing to Symptom Agent")
+            return await self.send_message("Symptom Agent", message, tool_context)
 
 
 async def convert_parts(parts: list[Part], tool_context: ToolContext):
@@ -367,12 +602,9 @@ async def convert_parts(parts: list[Part], tool_context: ToolContext):
 
 
 async def convert_part(part: Part, tool_context: ToolContext):
-    # Note: part.root.kind is expected to be 'text' | 'data' | 'file'
-    # We keep the logic defensive in case of unexpected shapes.
     try:
         root = part.root
     except Exception:
-        # fallback printing entire part
         return str(part)
 
     kind = getattr(root, "kind", None)
@@ -381,7 +613,6 @@ async def convert_part(part: Part, tool_context: ToolContext):
     if kind == 'data':
         return getattr(root, "data", {})
     if kind == 'file':
-        # Repackage A2A FilePart to google.genai Blob
         file_id = getattr(root.file, "name", str(uuid.uuid4()))
         file_bytes_b64 = getattr(root.file, "bytes", None)
         if file_bytes_b64:
@@ -400,15 +631,9 @@ async def convert_part(part: Part, tool_context: ToolContext):
             return {'file': 'empty'}
     return f'Unknown type: {getattr(part, "kind", str(part))}'
 
-# ===== Helper khởi tạo đồng bộ =====
 
-import httpx
-
+# ===== Helper khởi tạo đồng bộ =====n
 def get_initialized_routing_agent_sync(remote_agent_addresses: list[str]):
-    """
-    Hàm helper để khởi tạo HostAgent đồng bộ, đảm bảo load xong danh thiếp từ các remote agents
-    trước khi trả về Agent (tránh race condition).
-    """
     import asyncio
 
     async def _init():
@@ -416,7 +641,7 @@ def get_initialized_routing_agent_sync(remote_agent_addresses: list[str]):
         host = HostAgent(remote_agent_addresses, client)
         # Đợi load xong danh thiếp từ các remote agent
         await host.init_remote_agent_addresses(remote_agent_addresses)
-        return host.create_agent()
+        print(">>> DEBUG: returning HostAgent, not LlmAgent", type(host))
+        return host
 
-    # Chạy async trong vòng lặp hiện tại (blocking)
     return asyncio.get_event_loop().run_until_complete(_init())
