@@ -4,11 +4,11 @@ import logging
 from a2a.server.agent_execution import AgentExecutor, RequestContext
 from a2a.server.events.event_queue import EventQueue
 from a2a.server.tasks import TaskUpdater
-from a2a.types import TaskState, TextPart, Part
+from a2a.types import TaskState, TextPart, Part, DataPart
 from a2a.utils.message import new_agent_text_message
 
 from symptom_agent import SymptomAgent, ResponseFormat  # Import đúng agent
-from agents.symptom_agent.formatter import format_response_with_llm
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -28,47 +28,57 @@ class SymptomAgentExecutor(AgentExecutor):
 
         query = context.get_user_input()
         last_content: str | None = None
+        data: Any | None = None
 
         try:
             async for event in self.agent.stream(query, context.context_id):
-                content = event.get("content") if isinstance(event, dict) else str(event)
+                # Robust extraction of content and possible data payload
+                if isinstance(event, dict):
+                    content = event.get("content") if event.get("content") is not None else str(event)
+                    # prefer explicit 'data' field if present
+                    if "data" in event:
+                        data = event.get("data")
+                else:
+                    # fallback for non-dict event objects
+                    content = getattr(event, "content", None) or getattr(event, "text", None) or str(event)
+
                 last_content = content
+
+                # Update streaming status so host can forward partial text to clients
                 await updater.update_status(
                     TaskState.working,
                     message=new_agent_text_message(content),
                 )
 
-            # gửi artifact cuối cùng nếu có nội dung
-            if last_content:
-                # ⚡ Lấy data từ event cuối cùng (hoặc None)
-                try:
-                    data = event.get("data") if isinstance(event, dict) else None
-                except Exception:
-                    data = None
+            # gửi artifact cuối cùng nếu có nội dung (hoặc gửi artifact rỗng kèm data nếu chỉ có data)
+            final_text = last_content or ""
 
-                final_text = format_response_with_llm(last_content, data)
+            # Lấy data đã thu được (nếu có)
+            # data đã được gán trong loop nếu event dict chứa 'data'
 
-                parts = [Part(root=TextPart(text=final_text))]
-                logger.debug(
-                    "[SymptomAgentExecutor] Final artifact parts dump: %s",
-                    parts,
-                )
-                await updater.add_artifact(parts)
+            artifact_parts: list[Part] = []
+            # luôn thêm text part (dễ hiển thị cho client)
+            artifact_parts.append(Part(root=TextPart(text=final_text)))
+
+            # nếu có structured data, đính kèm như DataPart để HostAgent có thể forward nguyên structure
+            if data is not None:
+                artifact_parts.append(Part(root=DataPart(data=data)))
+
+            logger.debug(
+                "[SymptomAgentExecutor] Final artifact parts dump: %s",
+                artifact_parts,
+            )
+
+            if artifact_parts:
+                await updater.add_artifact(artifact_parts)
 
             await updater.update_status(TaskState.completed, final=True)
 
             # Trả về ResponseFormat với message là kết quả thực tế
-            
-            #return ResponseFormat(
-                #status="completed",
-                #message=last_content or "Hoàn thành",
-                #data=None
-            #)
-            
             return ResponseFormat(
                 status="completed",
                 message=final_text or "Hoàn thành",
-                data=data
+                data=data,
             )
 
         except Exception as e:
@@ -77,9 +87,9 @@ class SymptomAgentExecutor(AgentExecutor):
 
             # Luôn trả ResponseFormat thay vì None
             return ResponseFormat(
-                status="failed",
+                status="error",
                 message=f"Lỗi: {str(e)}",
-                data=None
+                data=None,
             )
 
     async def cancel(self, context, event_queue):

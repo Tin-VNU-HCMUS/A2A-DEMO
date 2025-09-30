@@ -1,0 +1,120 @@
+[
+  {
+    "type": "cost_tool_rag",
+    "input": {
+      "session_id": "6f685441-d90c-4631-b071-a00e53338843",
+      "user_query": " cho tôi các gói khám bệnh liên quan tới Xuất huyết tiêu hóa đi \n",
+      "final_response_parts": []
+    },
+    "result": {
+      "status": "completed",
+      "message": "Xử lý thành công",
+      "data": {
+        "input_query": " cho tôi các gói khám bệnh liên quan tới Xuất huyết tiêu hóa đi \n",
+        "packages": [
+          {
+            "id": "PKG11",
+            "name": "Gói khám tầm soát bệnh lý ống tiêu hóa có can thiệp",
+            "price": {
+              "all": 3500000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Bác sĩ khám lâm sàng",
+                "count": 1
+              },
+              {
+                "order": 2,
+                "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                "count": 1
+              },
+              {
+                "order": 3,
+                "service_name": "Định lượng Glucose [máu]",
+                "count": 1
+              },
+              {
+                "order": 4,
+                "service_name": "Định lượng Creatinine [máu]",
+                "count": 1
+              },
+              {
+                "order": 5,
+                "service_name": "Định lượng sắt huyết thanh",
+                "count": 1
+              }
+            ],
+            "score": 0.7245842218399048
+          },
+          {
+            "id": "PKG10",
+            "name": "Gói khám tầm soát bệnh lý ống tiêu hóa không can thiệp",
+            "price": {
+              "all": 2500000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Bác sĩ khám lâm sàng",
+                "count": 1
+              },
+              {
+                "order": 2,
+                "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                "count": 1
+              },
+              {
+                "order": 3,
+                "service_name": "Định lượng Glucose [máu]",
+                "count": 1
+              },
+              {
+                "order": 4,
+                "service_name": "Định lượng Creatinine [máu]",
+                "count": 1
+              },
+              {
+                "order": 5,
+                "service_name": "Định lượng sắt huyết thanh",
+                "count": 1
+              }
+            ],
+            "score": 0.6721841096878052
+          },
+          {
+            "id": "PKG3",
+            "name": "Gói khám tổng quát cao cấp",
+            "price": {
+              "all": 17000000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Gói 1 + Gói 2",
+                "count": 1
+              },
+              {
+                "order": 2,
+                "service_name": "Chụp cắt lớp vi tính tầm soát toàn thân không tiêm thuốc cản quang (từ 64-128 dãy)",
+                "count": 1
+              },
+              {
+                "order": 3,
+                "service_name": "Nội soi thực quản- dạ dày – tá tràng gây mê",
+                "count": 1
+              },
+              {
+                "order": 4,
+                "service_name": "Nội soi đại trực tràng toàn bộ ống mềm có dùng thuốc gây mê",
+                "count": 1
+              }
+            ],
+            "score": 0.6351020932197571
+          }
+        ],
+        "sim_threshold": 0.45
+      }
+    }
+  }
+]

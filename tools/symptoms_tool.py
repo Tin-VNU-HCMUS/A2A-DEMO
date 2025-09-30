@@ -48,7 +48,7 @@ logger = logging.getLogger(__name__)
 
 # CONFIG
 CONFIG = {
-    "pdf_path": "data/data_chuong_164 166.pdf",
+    "pdf_path": "data/So Tay Noi khoa Harrison 18th.pdf",
     "embed_cache_path": "data/embeddings_cache.pkl",
     "faiss_index_path": "data/faiss_index.index",
     "top_k": 5,

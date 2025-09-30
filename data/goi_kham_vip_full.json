@@ -1,0 +1,1666 @@
+{
+  "packages": [
+    {
+      "package_id": "PKG1",
+      "name": "Gói khám tổng quát cơ bản",
+      "price": {
+        "all": 4000000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám tổng quát",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng HbA1c [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng Cholesterol toàn phần [máu]",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng HDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Định lượng LDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Định lượng Triglycerid [máu]",
+          "count": 1
+        },
+        {
+          "order": 9,
+          "service_name": "Định lượng Acid Uric [máu]",
+          "count": 1
+        },
+        {
+          "order": 10,
+          "service_name": "Đo hoạt độ ALT [máu]",
+          "count": 1
+        },
+        {
+          "order": 11,
+          "service_name": "Đo hoạt độ AST [máu]",
+          "count": 1
+        },
+        {
+          "order": 12,
+          "service_name": "Đo hoạt độ GGT [máu]",
+          "count": 1
+        },
+        {
+          "order": 13,
+          "service_name": "Định lượng Ure [máu]",
+          "count": 1
+        },
+        {
+          "order": 14,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 15,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "count": 1
+        },
+        {
+          "order": 16,
+          "service_name": "Định lượng sắt huyết thanh [máu]",
+          "count": 1
+        },
+        {
+          "order": 17,
+          "service_name": "Định lượng Ferritin [máu]",
+          "count": 1
+        },
+        {
+          "order": 18,
+          "service_name": "Định lượng FT4 [máu]",
+          "count": 1
+        },
+        {
+          "order": 19,
+          "service_name": "Định lượng FT3 [máu]",
+          "count": 1
+        },
+        {
+          "order": 20,
+          "service_name": "Định lượng TSH [máu]",
+          "count": 1
+        },
+        {
+          "order": 21,
+          "service_name": "Tổng phân tích nước tiểu (Bằng máy tự động)",
+          "count": 1
+        },
+        {
+          "order": 22,
+          "service_name": "Chụp Xquang ngực thẳng (CR-Tim phổi thẳng)",
+          "count": 1
+        },
+        {
+          "order": 23,
+          "service_name": "Điện tim thường",
+          "count": 1
+        },
+        {
+          "order": 24,
+          "service_name": "Siêu âm Doppler tim màu",
+          "count": 1
+        },
+        {
+          "order": 25,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        },
+        {
+          "order": 26,
+          "service_name": "Siêu âm tuyến giáp",
+          "count": 1
+        },
+        {
+          "order": 27,
+          "service_name": "Siêu âm đàn hồi mô gan",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG2",
+      "name": "Gói khám tổng quát nâng cao",
+      "price": {
+        "male": 7000000,
+        "female": 7500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Gói 1",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 2,
+          "service_name": "HBsAg miễn dịch tự động",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 3,
+          "service_name": "HBsAb định lượng",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 4,
+          "service_name": "HBc total miễn dịch tự động",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 5,
+          "service_name": "HBc IgM",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 6,
+          "service_name": "HCV Ab miễn dịch tự động",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 7,
+          "service_name": "HBeAg miễn dịch tự động",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 8,
+          "service_name": "Định lượng AFP [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 9,
+          "service_name": "Định lượng CEA [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 10,
+          "service_name": "Định lượng CA 19-9 [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 11,
+          "service_name": "Định lượng CA 15-3 [máu]",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 12,
+          "service_name": "Định lượng CA 125 [máu]",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 13,
+          "service_name": "Định lượng Cyfra 21-1 [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 14,
+          "service_name": "Định lượng PSA tự do",
+          "applicable_for": [
+            "male"
+          ]
+        },
+        {
+          "order": 15,
+          "service_name": "Định lượng PSA toàn phần",
+          "applicable_for": [
+            "male"
+          ]
+        },
+        {
+          "order": 16,
+          "service_name": "Siêu âm Doppler mạch máu ngoài sọ (hệ mạch cảnh đốt sống)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 17,
+          "service_name": "Siêu âm Doppler động mạch, tĩnh mạch chi dưới",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 18,
+          "service_name": "Siêu âm tuyến vú hai bên",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 19,
+          "service_name": "Đo mật độ xương bằng phương pháp DEXA",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 20,
+          "service_name": "Khám Tai mũi họng",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        }
+      ]
+    },
+    {
+      "package_id": "PKG3",
+      "name": "Gói khám tổng quát cao cấp",
+      "price": {
+        "all": 17000000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Gói 1 + Gói 2",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Chụp cắt lớp vi tính tầm soát toàn thân không tiêm thuốc cản quang (từ 64-128 dãy)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Nội soi thực quản- dạ dày – tá tràng gây mê",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Nội soi đại trực tràng toàn bộ ống mềm có dùng thuốc gây mê",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG4",
+      "name": "Gói khám tầm soát nguy cơ đột quỵ",
+      "price": {
+        "all": 6000000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám chuyên khoa thần kinh",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng HbA1c [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng Cholesterol toàn phần [máu]",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng HDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Định lượng LDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Định lượng Triglycerid [máu]",
+          "count": 1
+        },
+        {
+          "order": 9,
+          "service_name": "Định lượng Acid Uric [máu]",
+          "count": 1
+        },
+        {
+          "order": 10,
+          "service_name": "Đo hoạt độ ALT [máu]",
+          "count": 1
+        },
+        {
+          "order": 11,
+          "service_name": "Đo hoạt độ AST [máu]",
+          "count": 1
+        },
+        {
+          "order": 12,
+          "service_name": "Đo hoạt độ GGT [máu]",
+          "count": 1
+        },
+        {
+          "order": 13,
+          "service_name": "Định lượng Ure [máu]",
+          "count": 1
+        },
+        {
+          "order": 14,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 15,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "count": 1
+        },
+        {
+          "order": 16,
+          "service_name": "Tổng phân tích nước tiểu (Bằng máy tự động)",
+          "count": 1
+        },
+        {
+          "order": 17,
+          "service_name": "Chụp Xquang ngực thẳng (CR-Tim phổi thẳng)",
+          "count": 1
+        },
+        {
+          "order": 18,
+          "service_name": "Điện tim thường",
+          "count": 1
+        },
+        {
+          "order": 19,
+          "service_name": "Siêu âm Doppler tim màu",
+          "count": 1
+        },
+        {
+          "order": 20,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        },
+        {
+          "order": 21,
+          "service_name": "Siêu âm doppler mạch máu ngoài sọ (hệ mạch cảnh đốt sống)",
+          "count": 1
+        },
+        {
+          "order": 22,
+          "service_name": "Chụp cộng hưởng từ não-mạch não không tiêm chất tương phản",
+          "count": 1
+        },
+        {
+          "order": 23,
+          "service_name": "Khám thêm chuyên khoa Tim mạch",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG5",
+      "name": "Gói khám tầm soát tim mạch",
+      "price": {
+        "all": 6000000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám chuyên khoa tim mạch",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng CRP hs",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng HbA1c [máu]",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng Cholesterol toàn phần [máu]",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Định lượng HDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Định lượng LDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 9,
+          "service_name": "Định lượng Triglycerid [máu]",
+          "count": 1
+        },
+        {
+          "order": 10,
+          "service_name": "Định lượng Acid Uric [máu]",
+          "count": 1
+        },
+        {
+          "order": 11,
+          "service_name": "Đo hoạt độ ALT [máu]",
+          "count": 1
+        },
+        {
+          "order": 12,
+          "service_name": "Đo hoạt độ AST [máu]",
+          "count": 1
+        },
+        {
+          "order": 13,
+          "service_name": "Đo hoạt độ GGT [máu]",
+          "count": 1
+        },
+        {
+          "order": 14,
+          "service_name": "Định lượng Ure [máu]",
+          "count": 1
+        },
+        {
+          "order": 15,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 16,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "count": 1
+        },
+        {
+          "order": 17,
+          "service_name": "Tổng phân tích nước tiểu (Bằng máy tự động)",
+          "count": 1
+        },
+        {
+          "order": 18,
+          "service_name": "Chụp Xquang ngực thẳng (CR-Tim phổi thẳng)",
+          "count": 1
+        },
+        {
+          "order": 19,
+          "service_name": "Điện tim thường",
+          "count": 1
+        },
+        {
+          "order": 20,
+          "service_name": "Siêu âm Doppler tim màu",
+          "count": 1
+        },
+        {
+          "order": 21,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        },
+        {
+          "order": 22,
+          "service_name": "Siêu âm doppler mạch máu ngoài sọ (hệ mạch cảnh đốt sống)",
+          "count": 1
+        },
+        {
+          "order": 23,
+          "service_name": "Siêu âm doppler động mạch, tĩnh mạch chi dưới",
+          "count": 1
+        },
+        {
+          "order": 24,
+          "service_name": "Chụp cắt lớp vi tính tính điểm vôi hóa mạch vành (64-128 dãy)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG6",
+      "name": "Gói khám tầm soát ung thư",
+      "price": {
+        "male": 9500000,
+        "female": 9800000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám lâm sàng",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng Glucose [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng HbA1c [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng Ure [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng Creatinine [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 7,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 8,
+          "service_name": "Đo hoạt độ ALT [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 9,
+          "service_name": "Đo hoạt độ AST [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 10,
+          "service_name": "Đo hoạt độ GGT [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 11,
+          "service_name": "Định lượng PSA tự do",
+          "applicable_for": [
+            "male"
+          ]
+        },
+        {
+          "order": 12,
+          "service_name": "Định lượng PSA toàn phần",
+          "applicable_for": [
+            "male"
+          ]
+        },
+        {
+          "order": 13,
+          "service_name": "Định lượng AFP [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 14,
+          "service_name": "Định lượng CEA [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 15,
+          "service_name": "Định lượng CA 19-9 [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 16,
+          "service_name": "Định lượng CA 15-3 [máu]",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 17,
+          "service_name": "Định lượng CA 125 [máu]",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 18,
+          "service_name": "Định lượng Cyfra 21-1 [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 19,
+          "service_name": "Tổng phân tích nước tiểu bằng máy tự động",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 20,
+          "service_name": "Chụp Xquang ngực thẳng (CR-Tim phổi thẳng)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 21,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 22,
+          "service_name": "Siêu âm tuyến giáp",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 23,
+          "service_name": "Siêu âm tuyến vú",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 24,
+          "service_name": "Siêu âm đàn hồi mô gan",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 25,
+          "service_name": "Nội soi thực quản- dạ dày – tá tràng toàn bộ ống mềm có sinh thiết",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 26,
+          "service_name": "Nội soi đại trực tràng toàn bộ ống mềm có sinh thiết",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 27,
+          "service_name": "Chụp cắt lớp vi tính lồng ngực không tiêm thuốc cản quang (từ 64-128 dãy)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 28,
+          "service_name": "Chụp cắt lớp vi tính sọ não không tiêm thuốc cản quang (từ 64-128 dãy)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        }
+      ]
+    },
+    {
+      "package_id": "PKG7",
+      "name": "Gói khám tầm soát thận niệu nam khoa",
+      "price": {
+        "all": 2500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám chuyên khoa Thận niệu nam khoa",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng Ure [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Định lượng PSA tự do",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Định lượng PSA toàn phần",
+          "count": 1
+        },
+        {
+          "order": 9,
+          "service_name": "Định lượng Testosterol [máu]",
+          "count": 1
+        },
+        {
+          "order": 10,
+          "service_name": "Định lượng FSH [máu]",
+          "count": 1
+        },
+        {
+          "order": 11,
+          "service_name": "Định lượng LH [máu]",
+          "count": 1
+        },
+        {
+          "order": 12,
+          "service_name": "Tổng phân tích nước tiểu (Bằng máy tự động)",
+          "count": 1
+        },
+        {
+          "order": 13,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        },
+        {
+          "order": 14,
+          "service_name": "Siêu âm tinh hoàn hai bên (Siêu âm Doppler mạch máu bìu)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG8",
+      "name": "Gói khám tầm soát viêm gan",
+      "price": {
+        "all": 3500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám lâm sàng",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng HbA1c [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Đo hoạt độ ALT [máu]",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Đo hoạt độ AST [máu]",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Đo hoạt độ GGT [máu]",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Định lượng Ure [máu]",
+          "count": 1
+        },
+        {
+          "order": 9,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 10,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "count": 1
+        },
+        {
+          "order": 11,
+          "service_name": "Định lượng sắt huyết thanh",
+          "count": 1
+        },
+        {
+          "order": 12,
+          "service_name": "Định lượng Ferritin",
+          "count": 1
+        },
+        {
+          "order": 13,
+          "service_name": "HBsAg miễn dịch tự động",
+          "count": 1
+        },
+        {
+          "order": 14,
+          "service_name": "HBsAb định lượng",
+          "count": 1
+        },
+        {
+          "order": 15,
+          "service_name": "HBc total miễn dịch tự động",
+          "count": 1
+        },
+        {
+          "order": 16,
+          "service_name": "HBc IgM",
+          "count": 1
+        },
+        {
+          "order": 17,
+          "service_name": "HCV Ab miễn dịch tự động",
+          "count": 1
+        },
+        {
+          "order": 18,
+          "service_name": "HBeAg miễn dịch tự động",
+          "count": 1
+        },
+        {
+          "order": 19,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        },
+        {
+          "order": 20,
+          "service_name": "Siêu âm đàn hồi mô (gan, tuyến vú,…)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG9",
+      "name": "Gói khám tầm soát gan nhiễm mỡ",
+      "price": {
+        "all": 3500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Gói 7",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Định lượng Cholesterol toàn phần [máu]",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng HDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng LDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng Triglycerid [máu]",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG10",
+      "name": "Gói khám tầm soát bệnh lý ống tiêu hóa không can thiệp",
+      "price": {
+        "all": 2500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám lâm sàng",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng sắt huyết thanh",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng Ferritin",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Test hơi thở tìm vi khuẩn HP bằng C13, C14",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG11",
+      "name": "Gói khám tầm soát bệnh lý ống tiêu hóa có can thiệp",
+      "price": {
+        "all": 3500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám lâm sàng",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng sắt huyết thanh",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng Ferritin",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Nội soi can thiệp – làm clo test chẩn đoán nhiễm H.Pylori",
+          "count": 1
+        },
+        {
+          "order": 9,
+          "service_name": "Nội soi đại trực tràng toàn bộ ống mềm không sinh thiết",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG12",
+      "name": "Gói khám tầm soát cơ xương khớp",
+      "price": {
+        "all": 2500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám chuyên khoa cơ xương khớp",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "VS (Tốc độ máu lắng)",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng Cholesterol toàn phần [máu]",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng HDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Định lượng LDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Định lượng Triglycerid [máu]",
+          "count": 1
+        },
+        {
+          "order": 9,
+          "service_name": "Định lượng Acid Uric [máu]",
+          "count": 1
+        },
+        {
+          "order": 10,
+          "service_name": "Đo hoạt độ ALT [máu]",
+          "count": 1
+        },
+        {
+          "order": 11,
+          "service_name": "Đo hoạt độ AST [máu]",
+          "count": 1
+        },
+        {
+          "order": 12,
+          "service_name": "Đo hoạt độ GGT [máu]",
+          "count": 1
+        },
+        {
+          "order": 13,
+          "service_name": "Định lượng Ure [máu]",
+          "count": 1
+        },
+        {
+          "order": 14,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 15,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "count": 1
+        },
+        {
+          "order": 16,
+          "service_name": "CRP định lượng",
+          "count": 1
+        },
+        {
+          "order": 17,
+          "service_name": "Tổng phân tích nước tiểu (bằng máy tự động)",
+          "count": 1
+        },
+        {
+          "order": 18,
+          "service_name": "Chụp XQ ngực thẳng (CR- Tim phổi thẳng)",
+          "count": 1
+        },
+        {
+          "order": 19,
+          "service_name": "Chụp XQ khớp (theo chỉ định bác sĩ)",
+          "count": 1
+        },
+        {
+          "order": 20,
+          "service_name": "Điện tim thường",
+          "count": 1
+        },
+        {
+          "order": 21,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "package_id": "PKG13",
+      "name": "Gói khám tầm soát ung thư (Nội soi dạ dày-đại tràng gây mê)",
+      "price": {
+        "all": 14500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám lâm sàng",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 3,
+          "service_name": "Định lượng Glucose [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 4,
+          "service_name": "Định lượng HbA1c [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng Ure [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng Creatinine [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 7,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 8,
+          "service_name": "Đo hoạt độ ALT [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 9,
+          "service_name": "Đo hoạt độ AST [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 10,
+          "service_name": "Đo hoạt độ GGT [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 11,
+          "service_name": "Định lượng PSA tự do",
+          "applicable_for": [
+            "male"
+          ]
+        },
+        {
+          "order": 12,
+          "service_name": "Định lượng PSA toàn phần",
+          "applicable_for": [
+            "male"
+          ]
+        },
+        {
+          "order": 13,
+          "service_name": "Định lượng AFP [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 14,
+          "service_name": "Định lượng CEA [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 15,
+          "service_name": "Định lượng CA 19-9 [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 16,
+          "service_name": "Định lượng CA 15-3 [máu]",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 17,
+          "service_name": "Định lượng CA 125 [máu]",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 18,
+          "service_name": "Định lượng Cyfra 21-1 [máu]",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 19,
+          "service_name": "Tổng phân tích nước tiểu bằng máy tự động",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 20,
+          "service_name": "Chụp Xquang ngực thẳng (CR-Tim phổi thẳng)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 21,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 22,
+          "service_name": "Siêu âm tuyến giáp",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 23,
+          "service_name": "Siêu âm tuyến vú",
+          "applicable_for": [
+            "female"
+          ]
+        },
+        {
+          "order": 24,
+          "service_name": "Siêu âm đàn hồi mô gan",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 25,
+          "service_name": "Siêu âm Doppler tim màu",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 26,
+          "service_name": "Điện tim thường",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 27,
+          "service_name": "Nội soi thực quản- dạ dày – tá tràng toàn bộ ống mềm có sinh thiết (gây mê)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 28,
+          "service_name": "Nội soi đại trực tràng toàn bộ ống mềm có sinh thiết (gây mê)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 29,
+          "service_name": "Chụp cắt lớp vi tính lồng ngực không tiêm thuốc cản quang (từ 64-128 dãy)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "order": 30,
+          "service_name": "Chụp cắt lớp vi tính sọ não không tiêm thuốc cản quang (từ 64-128 dãy)",
+          "applicable_for": [
+            "male",
+            "female"
+          ]
+        }
+      ]
+    },
+    {
+      "package_id": "PKG14",
+      "name": "Gói khám tổng quát tiêu chuẩn thứ 7",
+      "price": {
+        "all": 3500000
+      },
+      "items": [
+        {
+          "order": 1,
+          "service_name": "Bác sĩ khám tổng quát",
+          "count": 1
+        },
+        {
+          "order": 2,
+          "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+          "count": 1
+        },
+        {
+          "order": 3,
+          "service_name": "Thời gian prothrombin (PT: Prothrombin Time), (Các tên khác: TQ; Tỷ lệ Prothrombin) bằng máy bán tự động",
+          "count": 1
+        },
+        {
+          "order": 4,
+          "service_name": "Thời gian thromboplastin một phần hoạt hóa (APTT: Activated Partial thromboplastin time), (tên khác: TCK) bằng máy tự động",
+          "count": 1
+        },
+        {
+          "order": 5,
+          "service_name": "Định lượng Glucose [máu]",
+          "count": 1
+        },
+        {
+          "order": 6,
+          "service_name": "Định lượng HbA1c [máu]",
+          "count": 1
+        },
+        {
+          "order": 7,
+          "service_name": "Định lượng Cholesterol toàn phần [máu]",
+          "count": 1
+        },
+        {
+          "order": 8,
+          "service_name": "Định lượng HDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 9,
+          "service_name": "Định lượng LDL – C [máu]",
+          "count": 1
+        },
+        {
+          "order": 10,
+          "service_name": "Định lượng Triglycerid [máu]",
+          "count": 1
+        },
+        {
+          "order": 11,
+          "service_name": "Định lượng Acid Uric [máu]",
+          "count": 1
+        },
+        {
+          "order": 12,
+          "service_name": "Đo hoạt độ ALT [máu]",
+          "count": 1
+        },
+        {
+          "order": 13,
+          "service_name": "Đo hoạt độ AST [máu]",
+          "count": 1
+        },
+        {
+          "order": 14,
+          "service_name": "Định lượng Albumin [Máu]",
+          "count": 1
+        },
+        {
+          "order": 15,
+          "service_name": "Định lượng Ure [máu]",
+          "count": 1
+        },
+        {
+          "order": 16,
+          "service_name": "Định lượng Creatinine [máu]",
+          "count": 1
+        },
+        {
+          "order": 17,
+          "service_name": "Điện giải đồ ( Na+, K+, CL +)",
+          "count": 1
+        },
+        {
+          "order": 18,
+          "service_name": "Định lượng Bilirubin trực tiếp [Máu]",
+          "count": 1
+        },
+        {
+          "order": 19,
+          "service_name": "Định lượng Bilirubin toàn phần [Máu]",
+          "count": 1
+        },
+        {
+          "order": 20,
+          "service_name": "Định lượng Canxi toàn phần [Máu]",
+          "count": 1
+        },
+        {
+          "order": 21,
+          "service_name": "Định lượng FT4 [máu]",
+          "count": 1
+        },
+        {
+          "order": 22,
+          "service_name": "Định lượng FT3 [máu]",
+          "count": 1
+        },
+        {
+          "order": 23,
+          "service_name": "HBc total miễn dịch tự động",
+          "count": 1
+        },
+        {
+          "order": 24,
+          "service_name": "HBsAb định lượng",
+          "count": 1
+        },
+        {
+          "order": 25,
+          "service_name": "HBsAg miễn dịch tự động",
+          "count": 1
+        },
+        {
+          "order": 26,
+          "service_name": "Tổng phân tích nước tiểu (Bằng máy tự động)",
+          "count": 1
+        },
+        {
+          "order": 27,
+          "service_name": "Chụp Xquang ngực thẳng (CR-Tim phổi thẳng)",
+          "count": 1
+        },
+        {
+          "order": 28,
+          "service_name": "Điện tim thường",
+          "count": 1
+        },
+        {
+          "order": 29,
+          "service_name": "Siêu âm Doppler tim màu",
+          "count": 1
+        },
+        {
+          "order": 30,
+          "service_name": "Siêu âm ổ bụng (gan mật, tụy, thận, bàng quang)",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

@@ -115,5 +115,319 @@
         "sim_threshold": 0.55
       }
     }
+  },
+  {
+    "type": "cost_tool_rag",
+    "input": {
+      "session_id": null,
+      "data": {
+        "synthesized_answer": "cho tôi các gói khám bệnh liên quan tới Xuất huyết tiêu hóa đi",
+        "extracted_symptoms": [],
+        "pdf_results": []
+      }
+    },
+    "result": {
+      "status": "completed",
+      "message": "Xử lý thành công",
+      "data": {
+        "input_query": "",
+        "packages": [
+          {
+            "id": "PKG7",
+            "name": "Gói khám tầm soát thận niệu nam khoa",
+            "price": {
+              "all": 2500000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Bác sĩ khám chuyên khoa Thận niệu nam khoa",
+                "count": 1
+              },
+              {
+                "order": 2,
+                "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                "count": 1
+              },
+              {
+                "order": 3,
+                "service_name": "Định lượng Glucose [máu]",
+                "count": 1
+              },
+              {
+                "order": 4,
+                "service_name": "Định lượng Ure [máu]",
+                "count": 1
+              },
+              {
+                "order": 5,
+                "service_name": "Định lượng Creatinine [máu]",
+                "count": 1
+              }
+            ],
+            "score": 0.12444499880075455
+          },
+          {
+            "id": "PKG13",
+            "name": "Gói khám tầm soát ung thư (Nội soi dạ dày-đại tràng gây mê)",
+            "price": {
+              "all": 14500000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Bác sĩ khám lâm sàng",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 2,
+                "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 3,
+                "service_name": "Định lượng Glucose [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 4,
+                "service_name": "Định lượng HbA1c [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 5,
+                "service_name": "Định lượng Ure [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              }
+            ],
+            "score": 0.11491936445236206
+          },
+          {
+            "id": "PKG6",
+            "name": "Gói khám tầm soát ung thư",
+            "price": {
+              "male": 9500000,
+              "female": 9800000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Bác sĩ khám lâm sàng",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 2,
+                "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 3,
+                "service_name": "Định lượng Glucose [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 4,
+                "service_name": "Định lượng HbA1c [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 5,
+                "service_name": "Định lượng Ure [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              }
+            ],
+            "score": 0.08673502504825592
+          }
+        ],
+        "sim_threshold": 0.45
+      }
+    }
+  },
+  {
+    "type": "cost_tool_rag",
+    "input": {
+      "session_id": null,
+      "data": {
+        "extracted_symptoms": [],
+        "synthesized_answer": "cho tôi các gói khám bệnh liên quan tới Xuất huyết tiêu hóa đi",
+        "pdf_results": []
+      }
+    },
+    "result": {
+      "status": "completed",
+      "message": "Xử lý thành công",
+      "data": {
+        "input_query": "",
+        "packages": [
+          {
+            "id": "PKG7",
+            "name": "Gói khám tầm soát thận niệu nam khoa",
+            "price": {
+              "all": 2500000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Bác sĩ khám chuyên khoa Thận niệu nam khoa",
+                "count": 1
+              },
+              {
+                "order": 2,
+                "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                "count": 1
+              },
+              {
+                "order": 3,
+                "service_name": "Định lượng Glucose [máu]",
+                "count": 1
+              },
+              {
+                "order": 4,
+                "service_name": "Định lượng Ure [máu]",
+                "count": 1
+              },
+              {
+                "order": 5,
+                "service_name": "Định lượng Creatinine [máu]",
+                "count": 1
+              }
+            ],
+            "score": 0.12444499880075455
+          },
+          {
+            "id": "PKG13",
+            "name": "Gói khám tầm soát ung thư (Nội soi dạ dày-đại tràng gây mê)",
+            "price": {
+              "all": 14500000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Bác sĩ khám lâm sàng",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 2,
+                "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 3,
+                "service_name": "Định lượng Glucose [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 4,
+                "service_name": "Định lượng HbA1c [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 5,
+                "service_name": "Định lượng Ure [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              }
+            ],
+            "score": 0.11491936445236206
+          },
+          {
+            "id": "PKG6",
+            "name": "Gói khám tầm soát ung thư",
+            "price": {
+              "male": 9500000,
+              "female": 9800000
+            },
+            "items": [
+              {
+                "order": 1,
+                "service_name": "Bác sĩ khám lâm sàng",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 2,
+                "service_name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 3,
+                "service_name": "Định lượng Glucose [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 4,
+                "service_name": "Định lượng HbA1c [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              },
+              {
+                "order": 5,
+                "service_name": "Định lượng Ure [máu]",
+                "applicable_for": [
+                  "male",
+                  "female"
+                ]
+              }
+            ],
+            "score": 0.08673502504825592
+          }
+        ],
+        "sim_threshold": 0.45
+      }
+    }
   }
 ]

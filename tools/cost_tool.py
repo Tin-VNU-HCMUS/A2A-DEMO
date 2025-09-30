@@ -17,7 +17,7 @@ from langchain_core.messages import HumanMessage
 from rapidfuzz import fuzz
 
 # Config
-SIM_THRESHOLD = 0.55
+SIM_THRESHOLD = 0.45
 BASE_DIR = Path(__file__).resolve().parent.parent / "data"
 HISTORY_DIR = BASE_DIR / "history"
 HISTORY_DIR.mkdir(parents=True, exist_ok=True)
@@ -63,15 +63,13 @@ model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 
 # Load DB files
 try:
-    with open(BASE_DIR / "disease_specialty.json", "r", encoding="utf-8") as f:
-        disease_specialty = json.load(f)
-    with open(BASE_DIR / "specialty_package.json", "r", encoding="utf-8") as f:
-        specialty_package = json.load(f)
-    with open(BASE_DIR / "package_cost.json", "r", encoding="utf-8") as f:
-        package_cost = json.load(f)
+    with open(BASE_DIR / "goi_kham_vip_full.json", "r", encoding="utf-8") as f:
+        vip_data = json.load(f)
 except FileNotFoundError as e:
     logger.error("Không tìm thấy file dữ liệu trong data/: %s", e)
     raise
+
+packages = vip_data["packages"]
 
 # Helpers & indexes
 def preprocess_disease_variants(disease_specialty: List[Dict]) -> Dict[str, str]:
@@ -84,11 +82,19 @@ def preprocess_disease_variants(disease_specialty: List[Dict]) -> Dict[str, str]
             disease_map[key] = item
     return {v["disease"]: v["specialty"] for v in disease_map.values()}
 
-disease_to_specialty = preprocess_disease_variants(disease_specialty)
-disease_list = list(disease_to_specialty.keys())
-specialty_to_packages = {s["specialty"]: s["packages"] for s in specialty_package}
-package_cost_map = {c["id"]: c for c in package_cost}
-logger.debug("Index ready: %d bệnh, %d chuyên khoa, %d gói", len(disease_list), len(specialty_to_packages), len(package_cost_map))
+# Index gói khám theo tên và dịch vụ
+package_index = []
+for pkg in packages:
+    text_corpus = pkg["name"]
+    for item in pkg.get("items", []):
+        text_corpus += " " + item.get("service_name", "")
+    package_index.append({
+        "id": pkg["package_id"],
+        "name": pkg["name"],
+        "price": pkg.get("price", {}),
+        "items": pkg.get("items", []),
+        "corpus": text_corpus
+    })
 
 @lru_cache(maxsize=4096)
 def cached_embedding(text: str, to_tensor: bool = False):
@@ -184,26 +190,6 @@ def extract_diseases_rag(data: dict, disease_list: List[str]) -> List[str]:
         diseases = extract_diseases_fallback(data, disease_list)
     return diseases
 
-def map_disease_to_specialty(disease: str) -> Optional[str]:
-    # direct mapping
-    sp = disease_to_specialty.get(disease)
-    if sp:
-        return sp
-    # fuzzy fallback
-    for key, spkgs in specialty_to_packages.items():
-        if fuzz.partial_ratio(disease.lower(), key.lower()) > 85:
-            return key
-    # LLM fallback
-    if _gemini_client:
-        prompt = f"Bệnh '{disease}' thường thuộc chuyên khoa nào? Trả về 1 từ (vd: Nội tiêu hóa, Gan mật, Tim mạch) trong danh sách: {list(specialty_to_packages.keys())}"
-        try:
-            resp = call_llm(prompt).strip()
-            # chọn nếu đúng list
-            if resp in specialty_to_packages:
-                return resp
-        except Exception:
-            logger.warning("LLM không thể ánh xạ chuyên khoa cho %s", disease)
-    return None
 
 def compute_relevance(description: str, disease: str, symptoms: List[str]) -> float:
     try:
@@ -223,22 +209,27 @@ def compute_relevance(description: str, disease: str, symptoms: List[str]) -> fl
             pass
     return score
 
-def enrich_packages_for_specialty_rag(specialty: str, disease: str, symptoms: List[str]) -> List[Dict]:
-    pkgs = specialty_to_packages.get(specialty, [])
-    enriched = []
-    for p in pkgs:
-        cost = package_cost_map.get(p["id"], {})
-        rel = compute_relevance(p.get("description",""), disease, symptoms)
-        enriched.append({
-            "id": p["id"],
-            "name": p.get("name"),
-            "description": p.get("description"),
-            "cost_min": cost.get("min"),
-            "cost_max": cost.get("max"),
-            "currency": cost.get("currency"),
-            "relevance_score": rel
-        })
-    return sorted(enriched, key=lambda x: x["relevance_score"], reverse=True)
+def search_packages(query: str, top_k: int = 3) -> List[Dict]:
+    """Tìm gói khám phù hợp với query bằng embedding + fuzzy fallback"""
+    try:
+        corpus = [pkg["corpus"] for pkg in package_index]
+        emb_all = model.encode([query] + corpus, convert_to_tensor=True)
+        sims = util.cos_sim(emb_all[0], emb_all[1:])[0].cpu().numpy()
+        best_idx = np.argsort(sims)[::-1][:top_k]
+        results = []
+        for idx in best_idx:
+            pkg = package_index[idx]
+            results.append({
+                "id": pkg["id"],
+                "name": pkg["name"],
+                "price": pkg["price"],
+                "items": pkg["items"][:5],  # lấy 5 dịch vụ đầu tiên để hiển thị
+                "score": float(sims[idx])
+            })
+        return results
+    except Exception as e:
+        logger.exception("search_packages lỗi: %s", e)
+        return []
 
 # ==== LangChain Tool ====
 @tool
@@ -254,7 +245,6 @@ async def cost_tool_rag(agent_output: Dict) -> Dict:
     logger.debug("cost_tool_rag called")
 
     try:
-        # --- Validate input ---
         if not isinstance(agent_output, dict):
             raise ValueError("agent_output phải là dict với user_query và final_response_parts")
 
@@ -265,56 +255,23 @@ async def cost_tool_rag(agent_output: Dict) -> Dict:
         if not isinstance(response_parts, list):
             raise ValueError("final_response_parts phải là list[str]")
 
-        # --- Build synthesized_answer từ response_parts + user_query ---
+        # Ghép query + parts
         synthesized_answer = user_query.strip() + "\n\n" + "\n".join(response_parts)
 
-        data = {
-            "synthesized_answer": synthesized_answer,
-            "extracted_symptoms": []  # nếu bạn đã có module extract_symptoms thì gắn vào đây
-        }
+        # Tìm gói khám
+        packages_found = search_packages(synthesized_answer)
 
-        # --- Extract diseases ---
-        diseases = extract_diseases_rag(data, disease_list)
-
-        if not diseases and data.get("synthesized_answer"):
-            text = data["synthesized_answer"]
-            for d in disease_list:
-                if fuzz.partial_ratio(d.lower(), text.lower()) > 80:
-                    diseases.append(d)
-
-        diseases = list(dict.fromkeys(diseases))  # dedupe
-
-        # --- Normalize diseases ---
-        normalized = [normalize_disease_rag(d, disease_list) for d in diseases]
-
-        # --- Map to specialties ---
-        specialties = []
-        for n in normalized:
-            sp = map_disease_to_specialty(n["name"])
-            if sp and sp not in specialties:
-                specialties.append(sp)
-
-        # --- Enrich packages ---
-        specialty_packages = []
-        for sp in specialties:
-            pkgs = enrich_packages_for_specialty_rag(
-                sp, normalized[0]["name"] if normalized else "", data["extracted_symptoms"]
-            )
-            specialty_packages.append({"specialty": sp, "packages": pkgs})
-
-        # --- Build result ---
         result = {
             "status": "completed",
             "message": "Xử lý thành công",
             "data": {
                 "input_query": user_query,
-                "input_diseases": normalized,
-                "specialties": specialty_packages,
+                "packages": packages_found,
                 "sim_threshold": SIM_THRESHOLD
             }
         }
 
-        # --- Save history ---
+        # Save history
         save_history(session_id, {
             "type": "cost_tool_rag",
             "input": agent_output,

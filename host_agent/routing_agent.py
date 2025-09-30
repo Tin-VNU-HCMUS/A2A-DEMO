@@ -28,7 +28,7 @@ if not logger.handlers:
 
 import httpx
 
-from a2a.client import A2ACardResolver
+from a2a.client.card_resolver import A2ACardResolver
 from a2a.types import (
     AgentCard,
     DataPart,
@@ -51,6 +51,26 @@ from google.adk.agents.invocation_context import InvocationContext, new_invocati
 from google.adk.sessions.base_session_service import BaseSessionService
 from google.adk.agents.base_agent import BaseAgent
 from .remote_agent_connection import RemoteAgentConnections, TaskUpdateCallback
+from langchain.schema import SystemMessage, HumanMessage
+
+
+from dotenv import load_dotenv
+import os
+logger = logging.getLogger(__name__)
+
+# Load biến môi trường từ .env
+load_dotenv(override=True)
+
+# ====== Kiểm tra phụ thuộc và API key ======
+HAS_LLM = False
+if not os.getenv("GOOGLE_API_KEY"):
+    logger.error("GOOGLE_API_KEY not set")
+else:
+    try:
+        from langchain_google_genai import ChatGoogleGenerativeAI
+        HAS_LLM = True
+    except ImportError:
+        logger.warning("langchain_google_genai not installed. LLM disabled.")
 
 # --- Minimal Dummy session/agent utilities (unchanged) ---
 class DummySessionService(BaseSessionService):
@@ -234,6 +254,150 @@ Current agent: {current_agent['active_agent']}
             )
         return remote_agent_info
 
+
+    def _format_response(self, parts: List[Any]) -> str:
+        """
+        Định dạng kết quả từ các agent (Symptom / Cost / Booking) thành văn bản rõ ràng.
+        - Tự detect loại dữ liệu: Symptom (triệu chứng + bệnh), Cost (chi phí), Booking.
+        - Nếu có JSON, ưu tiên parse để lấy dữ liệu structured.
+        - Nếu có nhiều phần trùng nhau, tự động loại bỏ.
+        """
+        if not parts:
+            return "Xin lỗi, hiện tôi chưa có thông tin phù hợp."
+
+
+        # --- Dedupe & phân loại ---
+        texts, dicts = [], []
+        for p in parts:
+            if isinstance(p, str):
+                if p not in texts:
+                    texts.append(p.strip())
+            elif isinstance(p, dict):
+                if p not in dicts:
+                    dicts.append(p)
+            else:
+                s = str(p).strip()
+                if s and s not in texts:
+                    texts.append(s)
+
+
+        # Nếu có JSON (dict), hợp nhất lại
+        merged_data = {}
+        if dicts:
+            # chỉ lấy dict cuối cùng hoặc merge keys
+            for d in dicts:
+                for k, v in d.items():
+                    merged_data[k] = v
+
+
+        raw_text = "\n\n".join(texts)
+
+
+        # --- Phát hiện loại agent ---
+        agent_type = "general"
+        if "diseases" in merged_data or "explanation" in merged_data:
+            agent_type = "symptom"
+        elif "cost" in merged_data or any("giá" in t.lower() or "chi phí" in t.lower() for t in texts):
+            agent_type = "cost"
+        elif "booking" in merged_data or any("đặt lịch" in t.lower() for t in texts):
+            agent_type = "booking"
+
+
+        # --- Nếu không có LLM, trả về raw ---
+        model_name = os.getenv("GOOGLE_GENAI_MODEL")
+        if not model_name:
+            logger.warning("[HostAgent._format_response] GOOGLE_GENAI_MODEL not set, skip LLM rewrite.")
+            return raw_text if raw_text else json.dumps(merged_data, ensure_ascii=False, indent=2)
+
+
+        try:
+            llm = ChatGoogleGenerativeAI(model=model_name, temperature=0.3)
+
+            if agent_type == "symptom":
+                system_prompt = """
+                Bạn là trợ lý y tế hỗ trợ phân tích triệu chứng. 
+                Hãy xuất kết quả tiếng Việt, rõ ràng, theo đúng định dạng sau:
+
+                🔎 **1. Nhận định**
+                - (1–2 câu ngắn, tóm tắt tình trạng chung, không lặp lại nguyên văn toàn bộ triệu chứng)
+
+                🩺 **2. Bệnh có thể gặp**
+                - Liệt kê gạch đầu dòng từng bệnh (mỗi bệnh 1–2 câu mô tả ngắn).
+                - Không lặp lại cùng một bệnh nhiều lần.
+
+                💡 **3. Lời khuyên**
+                - Đưa 2–3 khuyến nghị cụ thể (vd: nên đi khám ở đâu, cần làm xét nghiệm gì).
+                - Ngắn gọn, súc tích, không lặp ý.
+
+                ⚠️ Yêu cầu:
+                - Giữ đúng 3 mục, có tiêu đề rõ ràng.
+                - Mỗi mục phải bắt đầu bằng biểu tượng + số thứ tự.
+                - Không viết thêm ngoài 3 mục này.
+                - Không lặp lại nội dung giữa các mục.
+                - Ví dụ mẫu đúng để bạn thực hiện:
+                    🔎 1. Nhận định: Bạn đang gặp các vấn đề tiêu hóa với nhiều triệu chứng khác nhau
+
+                    🩺 2. Các bệnh có thể bạn sẽ mắc phải:
+                    - Khó tiêu chức năng: Rối loạn tiêu hóa gây đầy bụng, khó tiêu, buồn nôn.
+                    - Viêm dạ dày: Viêm niêm mạc dạ dày do nhiễm trùng, thuốc hoặc các yếu tố khác.
+                    - Hội chứng ruột kích thích (IBS): Rối loạn chức năng ruột gây đau bụng, đầy hơi, táo bón hoặc tiêu chảy.
+                    - Tắc ruột: Tình trạng thức ăn không thể di chuyển qua ruột.
+                    
+                    💡 3. Lời khuyên:
+                    - Đi khám bác sĩ chuyên khoa tiêu hóa.
+                    - Cân nhắc nội soi tiêu hóa, xét nghiệm máu.
+                    - Ăn uống lành mạnh, tránh thức ăn gây kích ứng.
+                """
+            elif agent_type == "cost":
+                system_prompt = """
+                Bạn là trợ lý y tế tư vấn chi phí khám chữa bệnh.
+                - Tóm tắt chi phí dựa trên dữ liệu.
+                - Trình bày tiếng Việt, Markdown, gồm các mục:
+                💰 1. Chi phí tham khảo
+                📋 2. Lưu ý
+                💡 3. Lời khuyên
+                """
+            elif agent_type == "booking":
+                system_prompt = """
+                Bạn là trợ lý đặt lịch khám bệnh.
+                - Hãy hướng dẫn bệnh nhân cách đặt lịch khám.
+                - Trình bày tiếng Việt, Markdown:
+                📅 Hướng dẫn đặt lịch
+                💡 Lời khuyên thêm
+                """
+            else:
+                system_prompt = """
+                Bạn là trợ lý y tế. Hãy trình bày thông tin đầu vào rõ ràng, ngắn gọn, tránh lặp, bằng Markdown.
+                """
+
+
+            messages = [
+                SystemMessage(content=system_prompt),
+                HumanMessage(content=f"""
+                Dữ liệu đầu vào (có thể lặp, gồm text + JSON):
+
+
+{raw_text}\n\n{json.dumps(merged_data, ensure_ascii=False, indent=2) if merged_data else ''}
+
+
+Hãy viết lại câu trả lời hoàn chỉnh theo đúng cấu trúc Markdown đã quy định.
+""")
+]
+
+
+            if hasattr(llm, "invoke"):
+                resp = llm.invoke(messages)
+            else:
+                resp = llm(messages)
+
+
+            return getattr(resp, "content", None) or str(resp)
+
+
+        except Exception as e:
+            logger.error(f"[HostAgent._format_response] Gemini call error: {e}")
+            return raw_text if raw_text else json.dumps(merged_data, ensure_ascii=False, indent=2)
+
     async def send_message(
         self, agent_name: str, message: str, tool_context: ToolContext
     ):
@@ -351,7 +515,9 @@ Current agent: {current_agent['active_agent']}
                     await convert_parts(artifact.parts, tool_context)
                 )
         logger.debug(f"[HostAgent.send_message] Final response_parts: {response_parts}")
-        return response_parts
+        final_text = self._format_response(response_parts)
+        return [final_text]
+
 
     def _default_task_callback(self, event, card: AgentCard):
         """
@@ -644,4 +810,9 @@ def get_initialized_routing_agent_sync(remote_agent_addresses: list[str]):
         print(">>> DEBUG: returning HostAgent, not LlmAgent", type(host))
         return host
 
-    return asyncio.get_event_loop().run_until_complete(_init())
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    agent = loop.run_until_complete(_init())
+    # ❌ KHÔNG close loop, để agent còn xài httpx.AsyncClient
+    return agent
+

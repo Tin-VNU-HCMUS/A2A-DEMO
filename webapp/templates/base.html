@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chatbot Tư Vấn Y Tế</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="container">
+  <div class="chatbox">
+    <!-- Nút mở chat -->
+    <div class="chatbox__button">
+      <button class="open-btn" aria-label="Mở chat">
+        <img src="/static/images/chatbox-icon.svg" alt="Open chat" />
+      </button>
+    </div>
+
+    <!-- Cửa sổ chat -->
+    <div class="chatbox__support"
+         data-bot-avatar="/static/images/Screenshot 2025-09-27 054728.png"
+         data-user-avatar="/static/images/user-icon1.png"
+         aria-hidden="true">
+
+      <header class="chatbox__header" role="banner">
+        <div class="chatbox__image--header">
+          <img src="/static/images/Screenshot 2025-09-27 054728.png" alt="Bot avatar" />
+        </div>
+        <div class="chatbox__content--header">
+          <h4 class="chatbox__heading--header">Trợ lý ảo y tế</h4>
+          <p class="chatbox__description--header">
+            Xin chào! Mình có thể giúp gì cho bạn?
+          </p>
+        </div>
+      </header>
+
+      <main class="chatbox__messages" aria-live="polite">
+        <!-- Tin nhắn sẽ render bằng JS -->
+      </main>
+
+      <div class="quick-replies">
+        <button class="quick-btn" data-value="Đặt lịch khám">Đặt lịch khám</button>
+        <button class="quick-btn" data-value="Thông tin thuốc">Thông tin thuốc</button>
+        <button class="quick-btn" data-value="Liên hệ bác sĩ">Liên hệ bác sĩ</button>
+      </div>
+
+      <footer class="chatbox__footer">
+        <input class="chatbox__input" type="text" placeholder="Nhập câu hỏi..." />
+        <button class="chatbox__icon mic" title="Ghi âm">📢</button>
+        <button class="chatbox__send--footer send__button">➤</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

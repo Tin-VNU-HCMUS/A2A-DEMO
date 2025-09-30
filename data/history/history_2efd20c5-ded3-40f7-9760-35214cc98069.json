@@ -1,0 +1,59 @@
+[
+  {
+    "type": "cost_tool_rag",
+    "input": {
+      "session_id": "2efd20c5-ded3-40f7-9760-35214cc98069",
+      "user_query": "cho tôi các gói khám bệnh liên quan tới Xuất huyết tiêu hóa đi",
+      "final_response_parts": [
+        "cho tôi các gói khám bệnh liên quan tới Xuất huyết tiêu hóa đi"
+      ],
+      "data": {
+        "synthesized_answer": "cho tôi các gói khám bệnh liên quan tới Xuất huyết tiêu hóa đi",
+        "extracted_symptoms": [
+          "Xuất huyết tiêu hóa"
+        ],
+        "pdf_results": []
+      }
+    },
+    "result": {
+      "status": "completed",
+      "message": "Xử lý thành công",
+      "data": {
+        "input_query": "cho tôi các gói khám bệnh liên quan tới Xuất huyết tiêu hóa đi",
+        "input_diseases": [
+          {
+            "name": "Xuất huyết tiêu hóa",
+            "matched": true,
+            "score": 0.9377195835113525
+          }
+        ],
+        "specialties": [
+          {
+            "specialty": "Tiêu hóa",
+            "packages": [
+              {
+                "id": "pkg_gastro_endoscopy",
+                "name": "Gói nội soi + xét nghiệm",
+                "description": "Nội soi tiêu hóa + xét nghiệm máu",
+                "cost_min": 2800000,
+                "cost_max": 3800000,
+                "currency": "VND",
+                "relevance_score": 0.7970218062400818
+              },
+              {
+                "id": "pkg_gastro_basic",
+                "name": "Gói khám tiêu hóa cơ bản",
+                "description": "Khám + soi dạ dày cơ bản",
+                "cost_min": 800000,
+                "cost_max": 1200000,
+                "currency": "VND",
+                "relevance_score": 0.5865530967712402
+              }
+            ]
+          }
+        ],
+        "sim_threshold": 0.45
+      }
+    }
+  }
+]
